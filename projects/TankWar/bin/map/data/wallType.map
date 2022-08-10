@@ -1,0 +1,7 @@
+wallType = brick;grass;river;iron;base
+brickWallClass = com.mr.model.wall.BrickWall
+grassWallClass = com.mr.model.wall.GrassWall
+riverWallClass = com.mr.model.wall.RiverWall
+ironWallClass = com.mr.model.wall.IronWall
+
+advantages = 使用的好处就是方便扩展，并且减少了代码的书写量，使用枚举的都可以写入配置文件中。

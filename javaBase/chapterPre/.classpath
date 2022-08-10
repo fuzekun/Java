@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<accessrules>
+			<accessrule kind="accessible" pattern="javafx/**"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="src/codesize-1.1.jar"/>
+	<classpathentry kind="lib" path="src/picocontainer-2.14.2.jar"/>
+	<classpathentry kind="lib" path="src/robocode.battle-1.9.2.5.jar"/>
+	<classpathentry kind="lib" path="src/robocode.core-1.9.2.5.jar"/>
+	<classpathentry kind="lib" path="src/robocode.host-1.9.2.5.jar"/>
+	<classpathentry kind="lib" path="src/robocode.repository-1.9.2.5.jar"/>
+	<classpathentry kind="lib" path="src/robocode.sound-1.9.2.5.jar"/>
+	<classpathentry kind="lib" path="src/robocode.ui-1.9.2.5.jar"/>
+	<classpathentry kind="lib" path="src/robocode.ui.editor-1.9.2.5.jar"/>
+	<classpathentry kind="lib" path="src/roborumble.jar"/>
+	<classpathentry kind="lib" path="src/robocode.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

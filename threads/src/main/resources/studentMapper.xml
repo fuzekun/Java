@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="testStudent">
+    <!-- 配置数据库字段和实体属性之间的映射关系
+        定义resultMap-->
+<!--    <resultMap id="order_list_map" type="order">-->
+<!--        &lt;!&ndash; id用于映射主键 &ndash;&gt;-->
+<!--        <id property="id" column="id"/>-->
+<!--        &lt;!&ndash; 普通属性映射 &ndash;&gt;-->
+<!--        <result property="userId" column="user_id"/>-->
+<!--        <result property="number" column="number"/>-->
+<!--        <result property="createtime" column="createtime"/>-->
+<!--        <result property="note" column="note"/>-->
+<!--    </resultMap>-->
+    <!--其中的id相当于方法的名称-->
+   <!--可以配置这个地方作为mysql的方言，从而进行类型检查-->
+    <select id = "getById" parameterType="int" resultType="threadBase.JUC.model.Student" >
+            select *
+            from student
+            where id = #{id}
+     </select>
+    <!--增加学生-->
+    <insert id="insert" parameterType="threadBase.JUC.model.Student">
+        insert into student (name, tel) values (#{name}, #{tel})
+    </insert>
+    <update id="update" parameterType="threadBase.JUC.model.Student">
+        update student set name = #{name}, tel = #{tel}
+        where id = #{id}
+    </update>
+</mapper>

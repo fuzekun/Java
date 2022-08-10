@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-04-15T21:03:33</date>
+  <millis>1650027813420</millis>
+  <sequence>0</sequence>
+  <logger>com.mycom.myapp</logger>
+  <level>WARNING</level>
+  <class>TryAndLog.LogTest</class>
+  <method>test4</method>
+  <thread>1</thread>
+  <message>这是一个新的logger, 被记录到文件中</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-04-15T21:06:54</date>
+  <millis>1650028014440</millis>
+  <sequence>0</sequence>
+  <logger>com.mycom.myapp</logger>
+  <level>WARNING</level>
+  <class>TryAndLog.LogTest</class>
+  <method>test4</method>
+  <thread>1</thread>
+  <message>这是一个新的logger, 被记录到文件中</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-04-15T21:06:55</date>
+  <millis>1650028015036</millis>
+  <sequence>0</sequence>
+  <logger>com.mycom.myapp</logger>
+  <level>WARNING</level>
+  <class>TryAndLog.LogTest</class>
+  <method>test4</method>
+  <thread>1</thread>
+  <message>这是一个新的logger, 被记录到文件中</message>
+</record>
+</log>
+四月 15, 2022 9:26:39 下午 TryAndLog.LogTest test4
+警告: 这是一个新的logger, 被记录到文件中
+java.util.logging.LogRecord@606d8acfjava.util.logging.LogRecord@606d8acf
+不管输出什么，都得有我的身影
+四月 15, 2022 9:36:32 下午 TryAndLog.LogTest test5
+警告: 这是一个被格式化的formatter
+
+不管输出什么，都得有我的身影

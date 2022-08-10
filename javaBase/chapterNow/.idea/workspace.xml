@@ -1,0 +1,1072 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="19953653-5539-408a-8b19-708497c8919a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../deisinModel/.idea/libraries/Maven__cglib_cglib_3_2_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../deisinModel/.idea/libraries/Maven__org_ow2_asm_asm_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../deisinModel/src/main/java/clone/StirngBuilderClone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../deisinModel/src/main/java/clone/StringClone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../deisinModel/src/main/java/clone/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../deisinModel/src/main/java/proxy/AOPTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../deisinModel/src/main/java/proxy/CglibTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../deisinModel/src/main/java/state/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../threads/src/main/java/threadBase/baseKey/TestFutureTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../threads/src/main/java/threadBase/model/LockDead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../threads/src/main/java/threadBase/model/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../threads/src/main/java/threadBase/threadPool/SortThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../threads/src/main/java/threadBase/threadPool/SortUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../threads/src/main/java/threadBase/threadPool/TimeProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TankWar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TankWar/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../deisinModel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../deisinModel/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../deisinModel/deisinModel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../deisinModel/deisinModel.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../deisinModel/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../deisinModel/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../designMdle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../designModel/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../designModel/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../designModel/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../designModel/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../designModel/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../designModel/deisinModel.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../designModel/out/production/deisinModel/adapter/Duck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../designModel/out/production/deisinModel/adapter/DuckTestDriver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../designModel/out/production/deisinModel/adapter/MallarDuck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../designModel/out/production/deisinModel/adapter/Turkey.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../designModel/out/production/deisinModel/adapter/TurkeyAdapter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../designModel/out/production/deisinModel/adapter/WildTurkey.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../designModel/out/production/deisinModel/adapter/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../designModel/out/production/deisinModel/proxy/V8$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../designModel/out/production/deisinModel/proxy/V8$Tank.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../designModel/out/production/deisinModel/proxy/V8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../designModel/out/production/deisinModel/proxy/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../designModel/out/production/deisinModel/single/readme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../designModel/src/adapter/Duck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../designModel/src/adapter/DuckTestDriver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../designModel/src/adapter/MallarDuck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../designModel/src/adapter/Turkey.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../designModel/src/adapter/TurkeyAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../designModel/src/adapter/WildTurkey.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../designModel/src/adapter/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../designModel/src/proxy/V8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../designModel/src/proxy/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../designModel/src/single/readme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../threads/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../threads/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../threads/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../threads/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../threads/src/main/java/leetcode/FizzBuzz4.java" beforeDir="false" afterPath="$PROJECT_DIR$/../threads/src/main/java/leetcode/FizzBuzz4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../threads/src/main/java/leetcode/FizzBuzz6.java" beforeDir="false" afterPath="$PROJECT_DIR$/../threads/src/main/java/leetcode/FizzBuzz6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../threads/src/main/java/leetcode/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../threads/src/main/java/leetcode/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../threads/src/main/java/threadBase/baseKey/StartThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../threads/src/main/java/threadBase/baseKey/StartThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../threads/src/main/java/threadBase/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../threads/src/main/java/threadBase/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../threads/src/main/java/threadBase/threadPool/ThreadPoolToCaculate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../threads/src/main/java/threadBase/threadPool/ThreadPoolToCaculate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../threads/src/main/java/threadBase/threadPool/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../threads/src/main/java/threadBase/threadPool/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../threads/target/classes/leetcode/FizzBuzz4.class" beforeDir="false" afterPath="$PROJECT_DIR$/../threads/target/classes/leetcode/FizzBuzz4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../threads/target/classes/leetcode/FizzBuzz6.class" beforeDir="false" afterPath="$PROJECT_DIR$/../threads/target/classes/leetcode/FizzBuzz6.class" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="648">
+              <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/log.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="379">
+              <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/proxy/ProxyTest3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1800">
+              <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/jre/lib/rt.jar!/sun/reflect/MethodAccessorImpl.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/src.zip!/java/lang/reflect/ReflectAccess.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/proxy/CglibTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="720">
+              <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#271#272#0" expanded="true" />
+                <element signature="e#338#339#0" expanded="true" />
+                <element signature="e#367#368#0" expanded="true" />
+                <element signature="e#421#422#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/cglib/cglib/2.2.2/cglib-2.2.2.jar!/net/sf/cglib/proxy/MethodProxy.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3600">
+              <caret line="115" column="18" selection-start-line="115" selection-start-column="18" selection-end-line="115" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/cglib/cglib/2.2.2/cglib-2.2.2.jar!/net/sf/cglib/reflect/FastClass.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2592">
+              <caret line="100" column="41" selection-start-line="100" selection-start-column="41" selection-end-line="100" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/src.zip!/java/lang/reflect/InvocationHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>invoke</find>
+      <find>false</find>
+      <find>true</find>
+      <find>get</find>
+      <find>?</find>
+      <find>T extends</find>
+      <find>sort</find>
+      <find>private</find>
+      <find>registerDr</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/proxy/readMe" />
+        <option value="$PROJECT_DIR$/src/main/java/proxy/TraceHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/proxy/proxyTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/String/readme" />
+        <option value="$PROJECT_DIR$/src/main/java/String/StringTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/proxy/ProxyTest3.java" />
+        <option value="$PROJECT_DIR$/src/main/java/proxy/ProxyTest2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/TryAndLog/readme" />
+        <option value="$PROJECT_DIR$/src/main/java/TryAndLog/LoggingImangeViewer.java" />
+        <option value="D:/usersoftware/java/jdk1.8.0_221/jre/lib/logging.properties" />
+        <option value="$PROJECT_DIR$/log.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/TryAndLog/LogTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/TryAndLog/LoggingImageViewer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/geneticParadigm/PairTest3.java" />
+        <option value="$PROJECT_DIR$/src/main/java/geneticParadigm/TestSwap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/geneticParadigm/Constraint.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Class/readme" />
+        <option value="$PROJECT_DIR$/src/main/java/TryAndLog/TrueTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Class/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Class/DM.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/DataBase/Connect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Thread/TestSS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/NetWork/ComuHost.java" />
+        <option value="$PROJECT_DIR$/src/main/java/TryAndLog/ReThrow.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Thread/ThreadLocalTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Thread/ThreadLocalUse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Thread/AutomaticTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Thread/Print0AndJi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Thread/ProduceAndConsume.java" />
+        <option value="$PROJECT_DIR$/src/main/java/proxy/ProxyTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/proxy/CglibTest.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/usersoftware/java/apache-maven-3.6.0" />
+        <option name="userSettingsFile" value="D:\usersoftware\java\apache-maven-3.6.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="javaBase" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1110" />
+    <option name="width" value="1140" />
+    <option name="height" value="1338" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="chapterNow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chapterNow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chapterNow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chapterNow" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chapterNow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chapterNow" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chapterNow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chapterNow" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chapterNow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chapterNow" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="proxy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chapterNow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chapterNow" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="proxy" type="462c0819:PsiDirectoryNode" />
+              <item name="ProxyTest.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="chapterNow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chapterNow" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="proxy" type="462c0819:PsiDirectoryNode" />
+              <item name="ProxyTest2.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="chapterNow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chapterNow" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="String" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chapterNow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chapterNow" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Thread" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.ProduceAndConsume">
+    <configuration name="AutomaticTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Thread.AutomaticTest" />
+      <module name="javaBase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProduceAndConsume" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Thread.ProduceAndConsume" />
+      <module name="javaBase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreadLocalTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Thread.ThreadLocalTest" />
+      <module name="javaBase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreadLocalUse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Thread.ThreadLocalUse" />
+      <module name="javaBase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReThrow.testLock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaBase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TryAndLog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TryAndLog" />
+      <option name="MAIN_CLASS_NAME" value="TryAndLog.ReThrow" />
+      <option name="METHOD_NAME" value="testLock" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ProduceAndConsume" />
+        <item itemvalue="Application.AutomaticTest" />
+        <item itemvalue="Application.ThreadLocalUse" />
+        <item itemvalue="Application.ThreadLocalTest" />
+        <item itemvalue="JUnit.ReThrow.testLock" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="19953653-5539-408a-8b19-708497c8919a" name="Default Changelist" comment="" />
+      <created>1649850158668</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1649850158668</updated>
+      <workItem from="1649850161327" duration="8964000" />
+      <workItem from="1649946605708" duration="595000" />
+      <workItem from="1649981307767" duration="1485000" />
+      <workItem from="1649985250171" duration="752000" />
+      <workItem from="1650004970236" duration="37000" />
+      <workItem from="1650005297793" duration="31000" />
+      <workItem from="1650011780940" duration="4999000" />
+      <workItem from="1650022444428" duration="2394000" />
+      <workItem from="1650024898877" duration="7631000" />
+      <workItem from="1650067725017" duration="32000" />
+      <workItem from="1650597611571" duration="1485000" />
+      <workItem from="1650630708977" duration="2952000" />
+      <workItem from="1650675450673" duration="58000" />
+      <workItem from="1650695545074" duration="7251000" />
+      <workItem from="1650761797342" duration="290000" />
+      <workItem from="1650787001198" duration="6090000" />
+      <workItem from="1650869877890" duration="107000" />
+      <workItem from="1650873836219" duration="1499000" />
+      <workItem from="1650940562409" duration="642000" />
+      <workItem from="1650958763790" duration="1813000" />
+      <workItem from="1650962964516" duration="2245000" />
+      <workItem from="1650965337164" duration="1121000" />
+      <workItem from="1650968121099" duration="2879000" />
+      <workItem from="1651024212435" duration="296000" />
+      <workItem from="1651028360414" duration="18000" />
+      <workItem from="1651212984867" duration="931000" />
+      <workItem from="1651308943886" duration="3871000" />
+      <workItem from="1651368625369" duration="17000" />
+      <workItem from="1651922326722" duration="11000" />
+      <workItem from="1652101169794" duration="515000" />
+      <workItem from="1652173344668" duration="8472000" />
+      <workItem from="1652195106766" duration="1274000" />
+      <workItem from="1652229173028" duration="16000" />
+      <workItem from="1652235487307" duration="2835000" />
+      <workItem from="1652250552102" duration="42000" />
+      <workItem from="1652254496812" duration="9000" />
+      <workItem from="1652410957817" duration="1665000" />
+      <workItem from="1652519474309" duration="520000" />
+      <workItem from="1652863829689" duration="386000" />
+      <workItem from="1653119380214" duration="226000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Constraint_testArray - 2022.04.24 at 16h 41m 29s.xml">
+      <configuration name="Constraint.testArray" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Constraint_testArray - 2022.04.24 at 16h 51m 48s.xml">
+      <configuration name="Constraint.testArray" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Constraint_testArray2 - 2022.04.24 at 17h 13m 36s.xml">
+      <configuration name="Constraint.testArray2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Constraint_testArray2 - 2022.04.24 at 17h 13m 38s.xml">
+      <configuration name="Constraint.testArray2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Constraint_testArray - 2022.04.24 at 17h 26m 32s.xml">
+      <configuration name="Constraint.testArray" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Constraint_testArray - 2022.04.24 at 17h 26m 57s.xml">
+      <configuration name="Constraint.testArray" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Constraint_testArray - 2022.04.24 at 17h 27m 33s.xml">
+      <configuration name="Constraint.testArray" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Constraint_testArray - 2022.04.24 at 17h 28m 25s.xml">
+      <configuration name="Constraint.testArray" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReThrow_testJdk7TryWith - 2022.04.30 at 17h 15m 02s.xml">
+      <configuration name="ReThrow.testJdk7TryWith" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReThrow_testLock - 2022.04.30 at 17h 40m 43s.xml">
+      <configuration name="ReThrow.testLock" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="76456000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1508" height="900" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27103448" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Anonymous Apex" />
+      <window_info anchor="bottom" id="SOQL Query" />
+      <window_info anchor="bottom" id="Log Analyzer" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32899868" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32291666" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3984375" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32769832" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32769832" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.32965517" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/src.zip!/java/util/logging/SimpleFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2861">
+          <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/src.zip!/java/util/logging/LogRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TryAndLog/LogTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="70" column="41" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1838#2013#0" expanded="true" />
+            <element signature="e#2012#2013#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log.txt.0" />
+    <entry file="file://$PROJECT_DIR$/logs/log.txt.6">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/log.txt.5">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/log.txt.4">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/log.txt.3">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/log.txt.2">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/log.txt.0">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/log.txt.1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-171" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TryAndLog/LoggingImageViewer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/geneticParadigm/TestSwap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#326#327#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/geneticParadigm/Constraint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3564">
+          <caret line="114" column="38" selection-start-line="114" selection-start-column="38" selection-end-line="114" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1767#1768#0" expanded="true" />
+            <element signature="e#1816#1817#0" expanded="true" />
+            <element signature="e#3315#3316#0" expanded="true" />
+            <element signature="e#3355#3356#0" expanded="true" />
+            <element signature="e#3385#3386#0" expanded="true" />
+            <element signature="e#3420#3421#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/src.zip!/java/util/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3744">
+          <caret line="143" column="5" selection-start-line="143" selection-start-column="5" selection-end-line="143" selection-end-column="5" />
+          <folding>
+            <element signature="e#5709#5710#0" expanded="true" />
+            <element signature="e#5740#5741#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/javafx-src.zip!/javafx/util/Pair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34920">
+          <caret line="1022" selection-start-line="1019" selection-start-column="8" selection-end-line="1019" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/src.zip!/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4608">
+          <caret line="171" column="1" selection-start-line="171" selection-start-column="1" selection-end-line="171" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TryAndLog/TrueTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/src.zip!/java/io/FileInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="122" column="11" selection-start-line="122" selection-start-column="11" selection-end-line="122" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Class/readme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/geneticParadigm/PairTest3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1404">
+          <caret line="52" column="39" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#892#893#0" expanded="true" />
+            <element signature="e#953#954#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Class/DM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1620">
+          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataBase/Connect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6948">
+          <caret line="260" column="27" selection-start-line="260" selection-start-column="27" selection-end-line="260" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/NetWork/ComuHost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3204">
+          <caret line="106" column="5" selection-start-line="106" selection-start-column="5" selection-end-line="106" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3377#3378#0" expanded="true" />
+            <element signature="e#3405#3406#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TryAndLog/ReThrow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Thread/TestSS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Thread/ThreadLocalTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Thread/ThreadLocalUse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Thread/AutomaticTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Thread/VolatileTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Thread/Print0AndJi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2016">
+          <caret line="61" column="34" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/src.zip!/java/sql/DriverManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10728">
+          <caret line="329" column="7" selection-start-line="329" selection-start-column="7" selection-end-line="329" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/src.zip!/java/sql/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="57" column="17" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Class/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Thread/ProduceAndConsume.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="86" column="38" lean-forward="true" selection-start-line="86" selection-start-column="38" selection-end-line="86" selection-end-column="38" />
+          <folding>
+            <element signature="e#1729#1730#0" expanded="true" />
+            <element signature="e#1755#1756#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/src.zip!/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1548">
+          <caret line="77" column="21" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/jre/lib/rt.jar!/sun/reflect/MethodAccessor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/proxy/ProxyTest2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="55" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/proxy/ProxyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1368">
+          <caret line="45" column="29" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/proxy/ProxyTest3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1800">
+          <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/jre/lib/rt.jar!/sun/reflect/MethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/src.zip!/java/lang/reflect/ReflectAccess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/proxy/CglibTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
+            <element signature="e#338#339#0" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#421#422#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cglib/cglib/2.2.2/cglib-2.2.2.jar!/net/sf/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3600">
+          <caret line="115" column="18" selection-start-line="115" selection-start-column="18" selection-end-line="115" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cglib/cglib/2.2.2/cglib-2.2.2.jar!/net/sf/cglib/reflect/FastClass.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2592">
+          <caret line="100" column="41" selection-start-line="100" selection-start-column="41" selection-end-line="100" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/src.zip!/java/lang/reflect/InvocationHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>javaBase</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: junit:junit:4.12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

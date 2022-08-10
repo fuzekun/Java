@@ -1,0 +1,1105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ac8343c7-1cac-4495-9616-b7364c7926eb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/first_memory/memeryLeak/TestHashLeak.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/first_memory/memeryLeak/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exeSystem/Test$Fa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/exeSystem/Test$Fa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exeSystem/Test$GrandFa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/exeSystem/Test$GrandFa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exeSystem/Test$SSon.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/exeSystem/Test$SSon.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exeSystem/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/exeSystem/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../threads/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../threads/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/exeSystem/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/first_memory/memeryLeak/readme.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="7" selection-start-column="7" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/first_memory/memeryLeak/TestHashLeak.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="48" column="35" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#589#590#0" expanded="true" />
+                <element signature="e#660#661#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/src.zip!/java/lang/Class.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="71316">
+              <caret line="2064" column="17" selection-start-line="2064" selection-start-column="17" selection-end-line="2064" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/exeSystem/LazyDelete.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/src.zip!/java/lang/reflect/AccessibleObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1080">
+              <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/src.zip!/java/lang/reflect/Field.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="11376">
+              <caret line="366" column="21" selection-start-line="366" selection-start-column="21" selection-end-line="366" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/jre/lib/rt.jar!/sun/reflect/FieldAccessor.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/src.zip!/java/lang/invoke/MethodHandles.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22320">
+              <caret line="672" selection-start-line="672" selection-end-line="672" />
+              <folding>
+                <element signature="e#3053#3054#0" expanded="true" />
+                <element signature="e#3115#3116#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/src.zip!/java/util/EnumSet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6840">
+              <caret line="215" column="22" selection-start-line="215" selection-start-column="22" selection-end-line="215" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>body</find>
+      <find>highligh</find>
+      <find>langua</find>
+      <find>samp</find>
+      <find>highlight</find>
+      <find>code</find>
+      <find>post_asset_folder</find>
+      <find>appen</find>
+      <find>append</find>
+      <find>valueOf</find>
+      <find>poll</find>
+      <find>war</find>
+      <find>checkCam</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/exeSystem/Overload.java" />
+        <option value="$PROJECT_DIR$/src/exeSystem/DynamicDispatch.java" />
+        <option value="$PROJECT_DIR$/src/exeSystem/FieldHasNoPolymorphic.java" />
+        <option value="$PROJECT_DIR$/src/StringTest/Test.java" />
+        <option value="$PROJECT_DIR$/src/StringTest/StringLen.java" />
+        <option value="$PROJECT_DIR$/src/first_memory/LayoutOfObject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/first_memory/JolDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/first_memory/LayoutOfObject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/StringTest/StringLen.java" />
+        <option value="$PROJECT_DIR$/src/main/java/StringTest/NotChange.java" />
+        <option value="$PROJECT_DIR$/src/main/java/first_memory/JavaVMStackOf.java" />
+        <option value="$PROJECT_DIR$/src/main/java/first_memory/JavaMethodAreaOOM.java" />
+        <option value="$PROJECT_DIR$/src/main/java/first_memory/DirectMemoryOut.java" />
+        <option value="$PROJECT_DIR$/src/main/java/first_memory/HeapOOm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/StringTest/SimpleAPI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/compiler/readme" />
+        <option value="$PROJECT_DIR$/src/main/java/compiler/practic.java" />
+        <option value="$PROJECT_DIR$/src/main/java/compiler/Manager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/compiler/Employee.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fanxing/readme" />
+        <option value="$PROJECT_DIR$/src/main/java/fanxing/Blocks.java" />
+        <option value="$PROJECT_DIR$/src/main/java/compiler/NameCheckerScanner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/compiler/BADLY_NAME_CODE.java" />
+        <option value="$PROJECT_DIR$/src/main/java/compiler/practice.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fanxing/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/exeSystem/DynamicDispatch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/exeSystem/StaticDispatch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/compiler/HelloWorld.java" />
+        <option value="$PROJECT_DIR$/src/main/java/compiler/TestInteger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/classLoader/readme.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/compiler/ProxyTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/compiler/ChangeLenArgs.java" />
+        <option value="$PROJECT_DIR$/src/main/java/first_memory/Reference.java" />
+        <option value="$PROJECT_DIR$/src/main/java/first_memory/MainActive.java" />
+        <option value="$PROJECT_DIR$/src/main/java/first_memory/MyReference.java" />
+        <option value="$PROJECT_DIR$/src/main/java/compiler/NameCheckProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/compiler/BADLY_NAMED_CODE.java" />
+        <option value="$PROJECT_DIR$/src/main/java/compiler/NameChecker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gcAndDistribution/TestAllocation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/compiler/optimatition/ArrayBoundRemove.java" />
+        <option value="$PROJECT_DIR$/src/main/java/compiler/JIT/testGIT.java" />
+        <option value="$PROJECT_DIR$/src/main/java/compiler/JIT/testJIT.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/StringTest/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/StringTest/MethodInvokeTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/exeSystem/InvokDynamicTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/exeSystem/MethodHandleTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/exeSystem/LazyDelete.java" />
+        <option value="$PROJECT_DIR$/src/main/java/exeSystem/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/first_memory/memeryLeak/readme.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/first_memory/memeryLeak/TestHashLeak.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/usersoftware/java/apache-maven-3.6.0" />
+        <option name="userSettingsFile" value="D:\usersoftware\java\apache-maven-3.6.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="JVM_expriment" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="JVM_expriment" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1110" />
+    <option name="width" value="1140" />
+    <option name="height" value="1338" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="JVM_expriment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JVM_expriment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JVM_expriment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JVM_expriment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JVM_expriment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JVM_expriment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JVM_expriment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JVM_expriment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JVM_expriment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ToolWindowRun.ShowToolbar" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../threads" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projects\java\javaBase\JVM_expriment\src\main\java\compiler" />
+      <recent name="D:\projects\java\javaBase\JVM_expriment\src\main\java\compiler\nameCheckP" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.TestHashLeak">
+    <configuration name="LazyDelete" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exeSystem.LazyDelete" />
+      <module name="JVM_expriment" />
+      <option name="VM_PARAMETERS" value="-verbose:gc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exeSystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exeSystem.Test" />
+      <module name="JVM_expriment" />
+      <option name="VM_PARAMETERS" value="-verbose:gc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exeSystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestHashLeak" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="first_memory.memeryLeak.TestHashLeak" />
+      <module name="JVM_expriment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="first_memory.memeryLeak.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testJIT" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="compiler.JIT.testJIT" />
+      <module name="JVM_expriment" />
+      <option name="VM_PARAMETERS" value="-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="compiler.JIT.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LazyDelete (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JVM_expriment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exeSystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="exeSystem" />
+      <option name="MAIN_CLASS_NAME" value="exeSystem.LazyDelete" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LazyDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JVM_expriment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exeSystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="exeSystem" />
+      <option name="MAIN_CLASS_NAME" value="exeSystem.LazyDelete" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea -verbose:GC" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LazyDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JVM_expriment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exeSystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="exeSystem" />
+      <option name="MAIN_CLASS_NAME" value="exeSystem.LazyDelete" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea -verbose:gc" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LazyDelete.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JVM_expriment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exeSystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="exeSystem" />
+      <option name="MAIN_CLASS_NAME" value="exeSystem.LazyDelete" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.testJIT" />
+      <item itemvalue="Application.LazyDelete" />
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Application.TestHashLeak" />
+      <item itemvalue="JUnit.LazyDelete" />
+      <item itemvalue="JUnit.LazyDelete (1)" />
+      <item itemvalue="JUnit.LazyDelete.test1" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestHashLeak" />
+        <item itemvalue="JUnit.LazyDelete (1)" />
+        <item itemvalue="JUnit.LazyDelete.test1" />
+        <item itemvalue="JUnit.LazyDelete" />
+        <item itemvalue="JUnit.LazyDelete" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ac8343c7-1cac-4495-9616-b7364c7926eb" name="Default Changelist" comment="" />
+      <created>1644714502549</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1644714502549</updated>
+      <workItem from="1644714504819" duration="4966000" />
+      <workItem from="1644747890781" duration="2616000" />
+      <workItem from="1645705012857" duration="982000" />
+      <workItem from="1645751299011" duration="83000" />
+      <workItem from="1646462909121" duration="3243000" />
+      <workItem from="1646467030523" duration="2801000" />
+      <workItem from="1646550362511" duration="2934000" />
+      <workItem from="1646658519016" duration="607000" />
+      <workItem from="1647136606791" duration="988000" />
+      <workItem from="1647344320772" duration="2403000" />
+      <workItem from="1647430708394" duration="1333000" />
+      <workItem from="1647432071409" duration="775000" />
+      <workItem from="1647515802166" duration="2762000" />
+      <workItem from="1647586372760" duration="1206000" />
+      <workItem from="1647604191634" duration="46000" />
+      <workItem from="1647775828803" duration="4913000" />
+      <workItem from="1647828487498" duration="3719000" />
+      <workItem from="1647910435693" duration="8167000" />
+      <workItem from="1648175167594" duration="610000" />
+      <workItem from="1648467487972" duration="1919000" />
+      <workItem from="1648720415203" duration="128000" />
+      <workItem from="1648781229418" duration="2960000" />
+      <workItem from="1649035162646" duration="1743000" />
+      <workItem from="1649075376703" duration="15000" />
+      <workItem from="1649417023441" duration="5906000" />
+      <workItem from="1649509967538" duration="79000" />
+      <workItem from="1649510076333" duration="227000" />
+      <workItem from="1649640642718" duration="2479000" />
+      <workItem from="1649728549143" duration="3960000" />
+      <workItem from="1649760351591" duration="726000" />
+      <workItem from="1649808013262" duration="22892000" />
+      <workItem from="1649982804940" duration="2162000" />
+      <workItem from="1650005009283" duration="285000" />
+      <workItem from="1650005329867" duration="3131000" />
+      <workItem from="1650099991305" duration="960000" />
+      <workItem from="1650158956996" duration="12000" />
+      <workItem from="1650357019156" duration="8273000" />
+      <workItem from="1650413366491" duration="598000" />
+      <workItem from="1650506074784" duration="1792000" />
+      <workItem from="1650695538212" duration="6000" />
+      <workItem from="1650873820025" duration="14000" />
+      <workItem from="1650875349009" duration="3661000" />
+      <workItem from="1650890538160" duration="4995000" />
+      <workItem from="1650900196065" duration="821000" />
+      <workItem from="1650934002666" duration="10000" />
+      <workItem from="1650960596364" duration="1705000" />
+      <workItem from="1650965224651" duration="111000" />
+      <workItem from="1650966568957" duration="1541000" />
+      <workItem from="1651111062067" duration="2120000" />
+      <workItem from="1651142804344" duration="5549000" />
+      <workItem from="1651190973028" duration="457000" />
+      <workItem from="1651194621924" duration="758000" />
+      <workItem from="1651212974819" duration="8000" />
+      <workItem from="1651303605064" duration="2141000" />
+      <workItem from="1651392889757" duration="3756000" />
+      <workItem from="1651452719209" duration="36000" />
+      <workItem from="1651922339585" duration="1843000" />
+      <workItem from="1651969457088" duration="19000" />
+      <workItem from="1652097589564" duration="2917000" />
+      <workItem from="1652101685969" duration="3783000" />
+      <workItem from="1652140580874" duration="578000" />
+      <workItem from="1652167438627" duration="3330000" />
+      <workItem from="1653533663267" duration="1326000" />
+      <workItem from="1653615126153" duration="595000" />
+      <workItem from="1653783764141" duration="18000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="MainActive_test - 2022.04.25 at 17h 18m 26s.xml">
+      <configuration name="MainActive.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainActive_test - 2022.04.25 at 17h 19m 18s.xml">
+      <configuration name="MainActive.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NotChange_test1 - 2022.04.26 at 16h 10m 19s.xml">
+      <configuration name="NotChange.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LazyDelete - 2022.05.10 at 15h 33m 39s.xml">
+      <configuration name="LazyDelete" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LazyDelete_(1) - 2022.05.10 at 15h 34m 43s.xml">
+      <configuration name="LazyDelete (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LazyDelete_(1) - 2022.05.10 at 15h 35m 08s.xml">
+      <configuration name="LazyDelete (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LazyDelete_test1 - 2022.05.10 at 15h 35m 19s.xml">
+      <configuration name="LazyDelete.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LazyDelete_(1) - 2022.05.10 at 15h 36m 08s.xml">
+      <configuration name="LazyDelete (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LazyDelete_(1) - 2022.05.10 at 15h 36m 10s.xml">
+      <configuration name="LazyDelete (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LazyDelete_(1) - 2022.05.10 at 15h 36m 17s.xml">
+      <configuration name="LazyDelete (1)" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="147499000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1508" height="900" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4969325" visible="true" weight="0.2689655" />
+      <window_info id="Structure" order="1" sideWeight="0.5030675" side_tool="true" weight="0.2786207" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3268229" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49793103" weight="0.65625" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39921975" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49931034" weight="0.3268229" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3294271" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4986207" weight="0.67317706" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50206894" side_tool="true" weight="0.71261376" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4986207" weight="0.32769832" />
+      <window_info anchor="bottom" id="Anonymous Apex" order="13" />
+      <window_info anchor="bottom" id="Log Analyzer" order="14" />
+      <window_info anchor="bottom" id="SOQL Query" order="15" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.32965517" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" weight="0.32965517" />
+      <window_info anchor="right" id="jclasslib" order="9" weight="0.5248276" />
+      <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.32965517" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23310345" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32769832" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32769832" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32769832" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.32965517" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" weight="0.32965517" />
+      <window_info anchor="right" id="jclasslib" order="9" weight="0.5248276" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/JVM_expriment$LazyDelete.ic" NAME="LazyDelete Coverage Results" MODIFIED="1652167979688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>exeSystem.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/out/production/JVM_expriment/gcAndDistribution/FinalizeEscapeGC.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/compiler/HelloWorld.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/compiler/NameChecker$NameCheckScanner.class" />
+    <entry file="file://$PROJECT_DIR$/target/classes/compiler/BADLY_NAMED_CODE.class" />
+    <entry file="file://$PROJECT_DIR$/JVM_expriment.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_221/src.zip!/java/lang/Long.java" />
+    <entry file="file://$PROJECT_DIR$/target/classes/compiler/NameCheckProcessor.class" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_221/src.zip!/java/lang/Integer.java" />
+    <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/src.zip!/java/lang/ref/ReferenceQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="98" column="54" selection-start-line="98" selection-start-column="54" selection-end-line="98" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/classLoader/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/first_memory/MyReference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2052">
+          <caret line="57" column="24" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/exeSystem/StaticDispatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/compiler/nameCheckP/ProxyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1908">
+          <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/src.zip!/java/awt/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17064">
+          <caret line="534" column="24" selection-start-line="534" selection-start-column="24" selection-end-line="534" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/src.zip!/java/awt/Container.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="972">
+          <caret line="91" column="20" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/compiler/nameCheckP/ChangeLenArgs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/compiler/NameChecker.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/StringTest/NotChange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/StringTest/SimpleAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/StringTest/StringLen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/first_memory/MainActive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1764">
+          <caret line="55" column="22" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gcAndDistribution/TestAllocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2088">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/compiler/readme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/compiler/nameCheckP/TestInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1440">
+          <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/compiler/nameCheckP/BADLY_NAMED_CODE.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/compiler/nameCheckP/NameCheckProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/compiler/nameCheckP/NameChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/compiler/JIT/testJIT.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/classLoader/HelloWorld.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/classLoader/HelloWord2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/classLoader/HotSwap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/compiler/JIT/testJIT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/compiler/optimatition/ArrayBoundRemove.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/StringTest/IntegerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fanxing/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1368">
+          <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/exeSystem/DynamicDispatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/exeSystem/MethodHandleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="82" selection-start-line="12" selection-start-column="82" selection-end-line="12" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2484">
+          <caret line="109" column="36" selection-start-line="109" selection-start-column="36" selection-end-line="109" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/StringTest/MethodInvokeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/exeSystem/InvokDynamicTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/exeSystem/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/first_memory/memeryLeak/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71316">
+          <caret line="2064" column="17" selection-start-line="2064" selection-start-column="17" selection-end-line="2064" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/exeSystem/LazyDelete.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/src.zip!/java/lang/reflect/AccessibleObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/src.zip!/java/lang/reflect/Field.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11376">
+          <caret line="366" column="21" selection-start-line="366" selection-start-column="21" selection-end-line="366" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/jre/lib/rt.jar!/sun/reflect/FieldAccessor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/src.zip!/java/lang/invoke/MethodHandles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22320">
+          <caret line="672" selection-start-line="672" selection-end-line="672" />
+          <folding>
+            <element signature="e#3053#3054#0" expanded="true" />
+            <element signature="e#3115#3116#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/usersoftware/java/jdk1.8.0_221/src.zip!/java/util/EnumSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6840">
+          <caret line="215" column="22" selection-start-line="215" selection-start-column="22" selection-end-line="215" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/first_memory/memeryLeak/TestHashLeak.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="48" column="35" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#589#590#0" expanded="true" />
+            <element signature="e#660#661#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>JVM_expriment</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: org.openjdk.jol:jol-core:0.10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
