@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Blog</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="/css/bootstrap-tokenfield.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/editormd.min.css" rel="stylesheet">
+</head>
+<body>
+<header th:include="/header.html"></header>
+<div class="contant">
+    <div class="wrapper row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 row articleShow">
+            <h2>相关链接</h2>
+            <hr>
+            <div class="aboutSite">
+                <h4>简介:</h4>
+                <ul>
+                    <li>基于SpringBoot+bootstrap+MySQL开发</li>
+                    <li>github地址：<a href="https://github.com/fuzekun/Blog">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div th:include="footer.html"></div>
+</body>
+</html>

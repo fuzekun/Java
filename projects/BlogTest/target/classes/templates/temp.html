@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="zh-cn" />
+
+<title>Javascript 表单验证</title>
+
+<body>
+<h3>（一）验证必填项是否有空值。</h3>
+<form action = "submitpage.html" onsubmit = "return validate_form(this)" method = "post">
+    Name:<input type = "text" name = "name" size = "20">
+    <input type = "submit" value = "Submit">
+</form>
+
+<h3>（二）验证Email格式是否正确。</h3>
+<form action = "submitpage.html" onsubmit = "return is_email_form(this)" method = "post">
+    Email:<input type = "text" name = "email" size = "20">
+    <input type = "submit" value = "OK">
+</form>
+
+<script>
+    //判断内容是否为空
+    function validate_form(thisform){
+        with (thisform){
+            if (!validate_required(name,"Name must be filled out!")){
+                name.focus();
+                return false
+            }
+        }
+    }
+
+    function validate_required(field,alerttxt){
+        with (field){
+            if (value==null||value==""){
+                alert(alerttxt);
+                return false
+            }else {
+                return true
+            }
+        }
+    }
+
+    //判断内容是否符合email的格式
+    function is_email_form(thisform){
+        with(thisform){
+            if(!checkEmail(email,"Not a valid e-mail address!")){
+                email.focus();
+                return false;
+            }
+        }
+    }
+
+    function checkEmail(field, alertText){
+        with(field){
+            apos = value.indexOf("@");
+            dotPos = value.indexOf(".");
+            if(apos < 1 || dotPos-apos < 2){
+                alert(alertText);
+                return false;
+            }else{
+                return true;
+            }
+        }
+    }
+
+</script>
+</body>
+</html>

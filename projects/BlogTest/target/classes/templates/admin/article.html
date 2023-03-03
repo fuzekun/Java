@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文章管理</title>
+</head>
+<body>
+<div id="users" ></div>
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+<script>
+    $.ajax({
+        url: "/admin/getAllArticles",
+        type: "GET", //请求方式为get
+        dataType: "json", //返回数据格式为json
+        success: function(data) { //请求成功完成后要执行的方法
+            var str = "";
+            $.each(data.data,function(i,n){
+                str += "<ul>";
+                str+="<li>"+"标题："+n.title+"</li>";
+                str+="<li>"+"创建时间："+n.createdDate+"</li>";
+                str+="<li>"+"类型："+n.category+"</li>";
+                str+="<li>"+"描述："+n.describe+"</li>";
+                str  += "</ul>";
+            });
+            $("div").append(str);
+        }
+    });
+</script>
+</body>
+</html>
