@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>修改密码</title>
+</head>
+<body>
+<div th:include="header.html"></div>
+<div class="contant">
+<form th:action="@{'/modifyUser'}" METHOD="post">
+    <input name="username"> 用户名<br/>
+    <input name="password"> 密码<br/>
+    <button type="submit">提交</button>
+</form>
+</div>
+<div th:include="footer.html"></div>
+
+</body>
+</html>

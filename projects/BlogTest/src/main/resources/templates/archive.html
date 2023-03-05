@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Blog</title>
+</head>
+<body>
+<header th:include="header.html"></header>
+<div class="contant">
+    <ul class="wrapper row">
+        <li th:each="vo:${vos}" class="articleShow">
+            <span th:text="${vo.get('date')}"></span>
+            <ul class="articles">
+                <li  th:each="data:${vo.get('list')}">
+                    <a class="articleHead" th:text="${data.articleTitle}" th:href="@{'/article/' + ${data.articleId}}"></a>
+                </li>
+            </ul>
+
+        </li>
+    </ul>
+</div>
+<div th:include="footer.html"></div>
+</body>
+</html>

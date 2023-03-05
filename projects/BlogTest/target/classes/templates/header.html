@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>Blog</title>
+    <link href="/css/bootstrap.min.css" th:href="@{'/css/bootstrap.min.css'}" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" th:href="@{'/css/font-awesome.min.css'}" rel="stylesheet"/>
+    <link href="/css/bootstrap-tokenfield.css" th:href="@{'/css/bootstrap-tokenfield.css'}" rel="stylesheet">
+    <link href="/css/style.css" th:href="@{'/css/style.css'}" rel="stylesheet">
+    <link href="/css/editormd.min.css"  th:href="@{'/css/editormd.min.css'}" rel="stylesheet">
+    <script th:inline="javascript">
+        function ShowMessage(){
+            document.getElementById("judge").innerHTML = "Thymeleaf String by JS: " + [[${judge}]];
+            var judge =  document.getElementById("judge");
+            if(parseInt(judge) > 0) {
+                return "/create";
+            }
+            else{
+                alert("对不起你没有这个权限");
+            }
+        }
+    </script>
+</head>
+<body>
+<header class="row">
+    <div class="col-md-2 col-md-offset-1 row logo">
+        <a href="#">fuzekun</a></div>
+    <div class="col-md-5 col-md-offset-4 navigation">
+        <ul class="row">
+            <li class="col-md-2"><a id="home" href="/index"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+            <li class="col-md-2"><a id="project" href="/archive"><i class="fa fa-server" aria-hidden="true"></i>Archive</a></li>
+            <li class="col-md-2"><a id="life" href="/admins/about"><i class="fa fa-heart" aria-hidden="true"></i>About</a></li>
+            <li class="col-md-2"><a id="about" href="/admins/link"><i class="fa fa-th-large" aria-hidden="true"></i>Links</a></li>
+            <li class="col-md-1"><a id="create" onclick="ShowMessage()" th:href="@{'/create'}"><i class="fa fa-plus-circle" aria-hidden="true"></i></a></li>
+            <li class="col-md-2"><a th:href="@{'/logout'}">注销</a></li>
+            <li class="col-md-1"><a th:href="@{'/admins/loginht'}">登陆</a></li>
+            <a th:text="${'欢迎你' + #request.getSession().getAttribute('user')}" th:href="@{/admins/mdf}"></a>
+        </ul>
+    </div>
+</header>

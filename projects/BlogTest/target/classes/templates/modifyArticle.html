@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="zh">
+<head>
+    <meta charset="utf-8" />
+    <title>修改页面</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="/css/bootstrap-tokenfield.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/markdown.css}" />
+    <link rel="stylesheet" th:href="@{/css/editormd.min.css}"
+
+</head>
+
+<body>
+<header th:include="header.html"></header>
+<div id="layout">
+    <form th:action="@{'/modifyArticle/'}"  method = "post">
+        <input hidden="hidden" name="articleId" th:value="${articleId}">
+        <div class="title option"><label>Title</label><input type="text" class="form-control" id="title" name="title" th:value="${article.title}"></div>
+        <div class="row categoryTag">
+            <div class="col-md-6"><div><label>Category</label></div>
+                <select class="form-control" id="category"  name="category" th:value="${article.category}">
+                    <option value="Java">Java</option>
+                    <option value="Web">Web</option>
+                    <option value="Linux">Linux</option>
+                    <option value="分布式系统">分布式系统</option>
+                    <option value="数据库">数据库</option>
+                    <option value="算法">算法</option>
+                    <option value="其它">其它</option>
+                </select>
+            </div>
+            <div class="col-md-6"><label>Tag</label><input type="text" class="form-control" id="tag" name="tag" th:value="${tag.name}"></div>
+        </div>
+        <div class="describe option"><label>Describe</label><input type="text" class="form-control" id="describe" name="describe" th:value="${article.describes}"></div>
+        <div class="option"><label>Content</label></div>
+        <div class="row">
+            <div id="test-editormd">
+                <textarea id="content" name="content"></textarea>
+            </div>
+        </div>
+        <script th:inline="javascript">
+            msg = [[${article.content}]];
+            document.getElementById('content').innerHTML = msg;
+        </script>
+        <script th:src="@{/js/jquery.min.js}"></script>
+        <script th:src="@{/js/editormd.min.js}"></script>
+        <script type="text/javascript">
+            var testEditor;
+            $(function() {
+                testEditor = editormd("test-editormd", {
+                    width   : "90%",
+                    height  : 640,
+                    syncScrolling : "single",
+                    path    : "/lib/"
+                });
+            });
+        </script>
+
+        <div class="form-group articleSubmit option">
+            <button  type="submit" class="btn btn-default">修改</button>
+        </div>
+    </form>
+</div>
+
+
+<div th:include="footer.html"></div>
+</div>
+</body>
+</html>
