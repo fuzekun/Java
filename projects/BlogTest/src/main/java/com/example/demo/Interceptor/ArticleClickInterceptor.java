@@ -12,8 +12,13 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.Set;
 
 /**
- * Created by tuzhenyu on 17-7-20.
- * @author tuzhenyu
+ * Created by fuzekun on 17-7-20.
+ * @author fuzekun
+ *
+ * 文章点击次数拦截器：
+ * 点击文章的时候先进行拦截。然后数量加上1
+ * 用于热点文章。
+ * 加上任务调度就行了。
  */
 @Component
 public class ArticleClickInterceptor implements HandlerInterceptor {

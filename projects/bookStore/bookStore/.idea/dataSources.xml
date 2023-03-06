@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="bookstore" uuid="3a2cdd8c-58c0-4ee6-97ca-3688e2332b25">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://node0:3306/bookStore2</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="bookStore2@localhost" uuid="781a3da6-8d05-49a7-9bf0-2bde8731e5e5">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/bookStore2</jdbc-url>
+    </data-source>
+  </component>
+</project>
