@@ -38,7 +38,7 @@ public class BufferPool {
 
     private final int numPage;
     private final ConcurrentHashMap<PageId, LinkedNode>pageStore;
-
+    private final LockManage lockManage;
     // 双向链表
     private class LinkedNode {
 //        PageId pageId;
@@ -119,8 +119,107 @@ public class BufferPool {
          * @param lockType 锁类型
          * @return 成功返回true, 否则false
          * */
-        public synchronized boolean acquireLock(PageId pid, Transaction tid, int lockType) {
-            return true;
+        public synchronized boolean acquireLock(PageId pid, TransactionId tid, int lockType) {
+            // 判断当前页是否当前有锁, 没锁直接返回就行了
+            if (!lockMap.containsKey(pid)) {
+                // 创建锁
+                PageLock pageLock = new PageLock(tid, lockType);
+                ConcurrentHashMap<TransactionId, PageLock> pageLocks = new ConcurrentHashMap<>();
+                ConcurrentLinkedQueue<PageId> pages = pageMap.getOrDefault(tid, new ConcurrentLinkedQueue<>());
+                pageLocks.put(tid, pageLock);
+                pages.add(pid);
+                lockMap.put(pid, pageLocks);
+                pageMap.put(tid, pages);
+                return true;
+            }
+            // 有锁，获取当前锁的等待队列
+            ConcurrentHashMap<TransactionId, PageLock> pageLocks = lockMap.get(pid);
+            // 这里为什么会有lockMaps中有，但是pageMap中没有的情况呢?
+            ConcurrentLinkedQueue<PageId>pages = pageMap.getOrDefault(tid, new ConcurrentLinkedQueue<>());
+            // tid 没有 Page 上的锁
+            if (!pageLocks.containsKey(tid)) {
+                // 多个事务,一定是读锁
+                if (pageLocks.size() > 1) {
+                    // 申请的锁是共享锁
+                    if (lockType == PageLock.SHARE) {
+                        // tid 请求锁
+                        PageLock pageLock = new PageLock(tid, PageLock.SHARE);
+                        pageLocks.put(tid, pageLock);
+                        pages.add(pid);
+                        lockMap.put(pid, pageLocks);
+                        pageMap.put(tid, pages);
+                        return true;
+                    }
+                    // 申请排他锁
+                    else if (lockType == PageLock.EXCLUSIVE) {
+                        // tid 需要获取写锁，拒绝
+                        return false;
+                    }
+                }
+                // 如果只有一个事务，page上可能是读锁，也可能是写锁
+                if (pageLocks.size() == 1) {
+                    // 获取唯一的锁
+                    PageLock curLock = null;
+                    for (PageLock lock : pageLocks.values()) {
+                        curLock = lock;
+                    }
+                    // 如果页面上的锁是读锁
+                    if (curLock.getType() == PageLock.SHARE) {
+                        // 如果请求的锁也是读锁
+                        if (lockType == PageLock.SHARE) {
+                            // tid 请求锁
+                            PageLock pageLock = new PageLock(tid, PageLock.SHARE);
+                            pageLocks.put(tid, pageLock);
+                            pages.add(pid);
+                            lockMap.put(pid, pageLocks);
+                            pageMap.put(tid, pages);
+                            return true;
+                        }
+                        // 如果是独占锁
+                        else if (lockType == PageLock.EXCLUSIVE) {
+                            // tid 需要获取写锁，拒绝
+                            return false;
+                        }
+                    }
+                    // 如果是独占锁, 这里再加上一次判断，为了防止以后有新的锁
+                    else if (curLock.getType() == PageLock.EXCLUSIVE) {
+                        // tid 需要获取写锁，拒绝
+                        return false;
+                    }
+                }
+            }
+            // 当前事务持有 Page 锁
+            else {
+//            else if (pageLocks.get(tid) != null) {
+                PageLock pageLock = pageLocks.get(tid);
+                // 事务上是读锁
+                if (pageLock.getType() == PageLock.SHARE) {
+                    // 新请求的是读锁
+                    if (lockType == PageLock.SHARE) {
+                        return true;
+                    }
+                    // 新请求是写锁
+                    else if (lockType == PageLock.EXCLUSIVE) {
+                        // 如果该页面上只有一个锁，就是该事务的读锁
+                        if (pageLocks.size() == 1) {
+                            // 进行锁升级(升级为写锁)
+                            pageLock.setType(PageLock.EXCLUSIVE);
+                            // 这一个更新其实没有必要，因为上面的pageLock本来就是引用
+                            pageLocks.put(tid, pageLock);
+                            return true;
+                        }
+                        // 大于一个锁，说明有其他事务有共享锁
+                        else if (pageLocks.size() > 1) {
+                            // 不能进行锁的升级
+                            return false;
+                        }
+                    }
+                }
+                // 事务上是写锁
+                // 无论请求的是读锁还是写锁，都可以直接返回获取
+                return pageLock.getType() == PageLock.EXCLUSIVE;
+            }
+            return false;
         }
 
         /**
@@ -132,7 +231,7 @@ public class BufferPool {
          */
         public synchronized boolean releaseLock(PageId pid, TransactionId tid) {
             // 其实，只要保证上面的两个双向hash同步更新，就不会出现，tid不持有pid锁的情况，这个判断可以认为一直是true的。
-            if (holdsLock(tid, pid)) {
+            if (isHoldLock(tid, pid)) {
                 ConcurrentHashMap<TransactionId, PageLock> locks = lockMap.get(pid);
                 locks.remove(tid);
                 // 页面上没有锁了，移除页面
@@ -180,10 +279,13 @@ public class BufferPool {
         // some code goes here
         this.numPage = numPages;
         pageStore = new ConcurrentHashMap<>();
+        // 实验3创建双向链表实现LRU
         head = new LinkedNode(null);
         tail = new LinkedNode(null);
         head.next = tail;
         tail.pre = head;
+        // 实验4创建新的锁
+        this.lockManage = new LockManage();
     }
 
     public static int getPageSize() {
@@ -220,6 +322,25 @@ public class BufferPool {
     public  Page getPage(TransactionId tid, PageId pid, Permissions perm)
         throws TransactionAbortedException, DbException {
         // some code goes here
+        // some code goes here
+        // ------------------- lab 4 -----------------------------
+        // 判断需要获取的锁的类型
+        int lockType = perm == Permissions.READ_ONLY ? PageLock.SHARE : PageLock.EXCLUSIVE;
+        // 计算超时时间（设置为 500 ms）
+        long startTime = System.currentTimeMillis();
+        boolean isAcquired = false;
+        // 循环获取锁
+        while(!isAcquired){
+            // 尝试获取锁
+            isAcquired = lockManage.acquireLock(pid, tid, lockType);
+            long now = System.currentTimeMillis();
+            // 如果超过 500 ms没有获取就抛出异常
+            if(now - startTime > 500){
+                // 放弃当前事务
+                throw new TransactionAbortedException();
+            }
+        }
+        //- ---------------  lab 3 ------------------------
         if (!pageStore.containsKey(pid)) {   // 缓冲池中没有需要从DBFile中进行读取
             DbFile dbFile = Database.getCatalog().getDatabaseFile(pid.getTableId());    // 获取表
             Page page = dbFile.readPage(pid);                                           // 获取表的某一页
@@ -243,6 +364,8 @@ public class BufferPool {
      * Calling this is very risky, and may result in wrong behavior. Think hard
      * about who needs to call this and why, and why they can run the risk of
      * calling it.
+     * 直接释放锁，很危险。
+     * 因为事务一旦出现了错误。
      *
      * @param tid the ID of the transaction requesting the unlock
      * @param pid the ID of the page to unlock
@@ -250,6 +373,8 @@ public class BufferPool {
     public  void unsafeReleasePage(TransactionId tid, PageId pid) {
         // some code goes here
         // not necessary for lab1|lab2
+        // lab 4
+        lockManage.releaseLock(pid, tid);
     }
 
     /**

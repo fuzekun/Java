@@ -186,6 +186,12 @@ public class HeapFile implements DbFile {
                 list.add(page);
                 return list;
             }
+            //----------------- lab 4 ------------------------
+            // 当该 page 上没有空闲空 slot 的时候，提前释放该 page 上的锁，避免影响其他事务访问
+            // 这里进行提前释放锁。
+            else{
+                Database.getBufferPool().unsafeReleasePage(tid, pageId);
+            }
         }
         // 2. 如果都已经写满了，创建新的页面，追加方式写入页面
         BufferedOutputStream out = new BufferedOutputStream(new FileOutputStream(file, true));
