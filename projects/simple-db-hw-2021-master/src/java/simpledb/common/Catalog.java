@@ -1,10 +1,7 @@
 package simpledb.common;
 
-import javafx.scene.control.Tab;
-import simpledb.common.Type;
 import simpledb.storage.DbFile;
 import simpledb.storage.HeapFile;
-import simpledb.storage.Tuple;
 import simpledb.storage.TupleDesc;
 
 import java.io.BufferedReader;
@@ -16,42 +13,47 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * The Catalog keeps track of all available tables in the database and their
- *  *  * associated schemas.
+ * associated schemas.
  * For now, this is a stub catalog that must be populated with tables by a
  * user program before it can be used -- eventually, this should be converted
  * to a catalog that reads a catalog table from disk.
- *  *
+ * 表空间
+ * 用来保存数据库中可用的表及其表结构
+ *
+ *
  * @Threadsafe
  */
 public class Catalog {
 
-    private final ConcurrentHashMap<Integer, Table> hashMap;
+    private final ConcurrentHashMap<Integer, Table> hashTable;
+    private final ConcurrentHashMap<String, Integer> nameToId;
 
-    private static class Table {
-        private static  final long serialVersionUID = 1L;
+    private static class Table{
+        private static final long serialVersionUID = 1L;
 
-        public final DbFile dbFile;
-        public final String tableName;
+        public final DbFile dbFile;                                             // 表
+        public final String tableName;                                          // 表的描述信息,表名称和主键名称
         public final String pk;
 
-        public Table (DbFile file, String name, String pkey) {
+        public Table(DbFile file,String name,String pkeyField){
             dbFile = file;
             tableName = name;
-            pk = pkey;
+            pk = pkeyField;
         }
 
-        @Override
         public String toString() {
-            return tableName + "(" + dbFile.getId() + ":" + pk + ")";
+            return tableName + "(" + dbFile.getId() + ":" + pk +")";
         }
     }
+
     /**
      * Constructor.
      * Creates a new, empty catalog.
      */
     public Catalog() {
         // some code goes here
-        hashMap = new ConcurrentHashMap<Integer, Table>();
+        hashTable = new ConcurrentHashMap<Integer,Table>();
+        nameToId = new ConcurrentHashMap<>();
     }
 
     /**
@@ -62,14 +64,22 @@ public class Catalog {
      * @param name the name of the table -- may be an empty string.  May not be null.  If a name
      * conflict exists, use the last table to be added as the table for a given name.
      * @param pkeyField the name of the primary key field
+     *
+     *                  添加一张表， 如果表重名，那么使用最后的表覆盖新的表
      */
     public void addTable(DbFile file, String name, String pkeyField) {
         // some code goes here
-        Table t  = new Table(file, name, pkeyField);
-        hashMap.put(file.getId(), t);
+        Table t = new Table(file,name,pkeyField);
+        // 1. 首先看是否有这个名字，如果有，删除，并且更新
+        if (nameToId.containsKey(name)) {
+            hashTable.remove(nameToId.get(name));       //  删除
+        }
+        hashTable.put(file.getId(),t);
+        nameToId.put(name, file.getId());               // 更新nameToId
     }
 
     public void addTable(DbFile file, String name) {
+//        System.out.println(String.format("创建表%s", name));
         addTable(file, name, "");
     }
 
@@ -90,31 +100,34 @@ public class Catalog {
      */
     public int getTableId(String name) throws NoSuchElementException {
         // some code goes here
-        Integer res = hashMap.searchValues(1, value-> {
-            if (value.tableName.equals(name)) {
-                return value.dbFile.getId();
-            }
-            return null;
-        });
-        if (res == null) {
+        if(name != null && nameToId.containsKey(name)){
+            return nameToId.get(name);
+        }else{
             throw new NoSuchElementException("not found id for table " + name);
-        } else {
-            return res.intValue();
         }
     }
+
+//    private Integer searchName(String name) {
+//        for (Table table: hashTable.values()) {
+//            if (table.tableName.equals(name))
+//                return table.dbFile.getId();
+//        }
+//        return null;
+//    }
 
     /**
      * Returns the tuple descriptor (schema) of the specified table
      * @param tableid The id of the table, as specified by the DbFile.getId()
      *     function passed to addTable
      * @throws NoSuchElementException if the table doesn't exist
+     * 获取表的tupleDesc
      */
     public TupleDesc getTupleDesc(int tableid) throws NoSuchElementException {
         // some code goes here
-        Table t = hashMap.getOrDefault(tableid, null);
-        if (t != null) {
+        Table t = hashTable.getOrDefault(tableid,null);
+        if(t != null){
             return t.dbFile.getTupleDesc();
-        } else {
+        }else{
             throw new NoSuchElementException("not found tuple desc for table " + tableid);
         }
     }
@@ -127,45 +140,45 @@ public class Catalog {
      */
     public DbFile getDatabaseFile(int tableid) throws NoSuchElementException {
         // some code goes here
-        Table t = hashMap.getOrDefault(tableid, null);
-        if (t != null) {
-            return t.dbFile;
-        } else {
+        Table t = hashTable.getOrDefault(tableid,null);
+        if(t != null){
+            return t.dbFile;                    // 获取表
+        }else{
             throw new NoSuchElementException("not found db file for table " + tableid);
         }
     }
 
     public String getPrimaryKey(int tableid) {
         // some code goes here
-        Table t = hashMap.getOrDefault(tableid, null);
-        if (t != null) {
+        Table t = hashTable.getOrDefault(tableid,null);
+        if(t != null){
             return t.pk;
-        } else {
+        }else{
             throw new NoSuchElementException("not found primary key for table " + tableid);
         }
     }
 
     public Iterator<Integer> tableIdIterator() {
         // some code goes here
-        return hashMap.keySet().iterator();
+        return hashTable.keySet().iterator();
     }
 
     public String getTableName(int id) {
         // some code goes here
-        Table t = hashMap.getOrDefault(id, null);
-        if (t != null) {
+        Table t = hashTable.getOrDefault(id,null);
+        if(t != null){
             return t.tableName;
-        } else {
+        }else{
             throw new NoSuchElementException("not found name for table " + id);
         }
     }
-    
+
     /** Delete all tables from the catalog */
     public void clear() {
         // some code goes here
-        hashMap.clear();
+        hashTable.clear();
     }
-    
+
     /**
      * Reads the schema from a file and creates the appropriate tables in the database.
      * @param catalogFile
@@ -174,23 +187,23 @@ public class Catalog {
         String line = "";
         String baseFolder=new File(new File(catalogFile).getAbsolutePath()).getParent();
         try {
-            BufferedReader br = new BufferedReader(new FileReader(catalogFile));
-            
+            BufferedReader br = new BufferedReader(new FileReader(new File(catalogFile)));
+
             while ((line = br.readLine()) != null) {
                 //assume line is of the format name (field type, field type, ...)
                 String name = line.substring(0, line.indexOf("(")).trim();
                 //System.out.println("TABLE NAME: " + name);
                 String fields = line.substring(line.indexOf("(") + 1, line.indexOf(")")).trim();
                 String[] els = fields.split(",");
-                ArrayList<String> names = new ArrayList<>();
-                ArrayList<Type> types = new ArrayList<>();
+                ArrayList<String> names = new ArrayList<String>();
+                ArrayList<Type> types = new ArrayList<Type>();
                 String primaryKey = "";
                 for (String e : els) {
                     String[] els2 = e.trim().split(" ");
                     names.add(els2[0].trim());
-                    if (els2[1].trim().equalsIgnoreCase("int"))
+                    if (els2[1].trim().toLowerCase().equals("int"))
                         types.add(Type.INT_TYPE);
-                    else if (els2[1].trim().equalsIgnoreCase("string"))
+                    else if (els2[1].trim().toLowerCase().equals("string"))
                         types.add(Type.STRING_TYPE);
                     else {
                         System.out.println("Unknown type " + els2[1]);
@@ -221,4 +234,3 @@ public class Catalog {
         }
     }
 }
-

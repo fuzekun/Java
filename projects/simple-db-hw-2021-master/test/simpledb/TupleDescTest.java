@@ -13,14 +13,13 @@ import static org.junit.Assert.*;
 import org.junit.Assert;
 import junit.framework.JUnit4TestAdapter;
 
-public class TupleDescTest extends SimpleDbTestBase {
-
+public class TupleDescTest extends SimpleDbTestBase{
     /**
      * Unit test for TupleDesc.combine()
      */
     @Test public void combine() {
         TupleDesc td1, td2, td3;
-
+        System.out.println(Math.floor(2.5));
         td1 = Utility.getTupleDesc(1, "td1");
         td2 = Utility.getTupleDesc(2, "td2");
 
@@ -53,6 +52,7 @@ public class TupleDescTest extends SimpleDbTestBase {
      * Ensures that combined's field names = td1's field names + td2's field names
      */
     private boolean combinedStringArrays(TupleDesc td1, TupleDesc td2, TupleDesc combined) {
+
         for (int i = 0; i < td1.numFields(); i++) {
             if (!(((td1.getFieldName(i) == null) && (combined.getFieldName(i) == null)) ||
                     td1.getFieldName(i).equals(combined.getFieldName(i)))) {
@@ -178,6 +178,16 @@ public class TupleDescTest extends SimpleDbTestBase {
      */
     public static junit.framework.Test suite() {
         return new JUnit4TestAdapter(TupleDescTest.class);
+    }
+
+
+    /**
+     * 测试如果越界,assert回出现什么错误
+     */
+    @Test
+    public void testOutOfBound() {
+        TupleDesc tp = Utility.getTupleDesc(3, "name");
+        System.out.println(tp.getFieldName(2));
     }
 }
 

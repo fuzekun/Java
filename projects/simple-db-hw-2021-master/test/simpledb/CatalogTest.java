@@ -79,15 +79,18 @@ public class CatalogTest extends SimpleDbTestBase {
     
     /**
      * Check that duplicate names are handled correctly
+     * // 在2之前就已经
      */
     @Test public void handleDuplicateNames() {
     	int id3 = r.nextInt();
+//        System.out.println(String.format("id3 = %d", id3));
     	Database.getCatalog().addTable(new SkeletonFile(id3, Utility.getTupleDesc(2)), name);
     	assertEquals(id3, Database.getCatalog().getTableId(name));
     }
     
     /**
      * Check that duplicate file ids are handled correctly
+     * 解决重复的id问题
      */
     @Test public void handleDuplicateIds() {
     	String newName = SystemTestUtil.getUUID();

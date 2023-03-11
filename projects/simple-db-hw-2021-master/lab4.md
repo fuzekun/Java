@@ -1,11 +1,15 @@
 # 6.830 Lab 4: SimpleDB Transactions
 
+
+
+
+
 **Assigned: Monday, Apr 5, 2021**<br>
 **Due: Thursday, Apr 22, 2021 11:59 PM ET**
 
-In this lab, you will implement a simple locking-based
-transaction system in SimpleDB.  You will need to add lock and
-unlock calls at the appropriate places in your code, as well as
+In this lab, you will implement a simple l**ocking-based**
+**transaction system** in SimpleDB.  You will need to add l**ock and**
+**unlock calls** at the appropriate places in your code, as well as
 code to track the locks held by each transaction and grant
 locks to transactions as they are needed.
 
@@ -34,7 +38,13 @@ $ cd simple-db-hw
 $ git pull upstream master
 ```
 
-##  2. Transactions, Locking, and Concurrency Control
+##  2. Transactions, Locking, and Concurrency Contro**l**
+
+**事务，锁，并发控制**
+
+
+
+
 
 Before starting,
 you should make sure you understand what a transaction is and how
@@ -71,21 +81,27 @@ it ensures that the ACID properties are satisfied:
 ###  2.3. Recovery and Buffer Management
 
 To simplify your job, we recommend that you implement a NO STEAL/FORCE
-buffer management policy.
+buffer management policy. **两阶段锁的缓冲池管理策略**
 
 As we discussed in class, this means that:
 
 *  You shouldn't evict dirty (updated) pages from the buffer pool if they
-   are locked by an uncommitted transaction (this is NO STEAL).
+   are locked by an uncommitted transaction (this is NO STEAL).**页面被未完成的事务上锁就不能被淘汰**
 *  On transaction commit, you should force dirty pages to disk (e.g.,
-   write the pages out) (this is FORCE).
-   
+   write the pages out) (this is FORCE). **事务一旦提交，强制刷盘**
+
 To further simplify your life, you may assume that SimpleDB will not crash
-while processing a `transactionComplete` command.  Note that
-these three points mean that you do not need to implement log-based
-recovery in this lab, since you will never need to undo any work (you never evict
+while processing a `transactionComplete` command.  Note that  **假定事务完成操作(释放锁操作)将不会有冲突**
+these three points mean that you do not need to **implement log-based**
+**recovery** in this lab, since you will never need to undo any work (you never evict
 dirty pages) and you will never need to redo any work (you force
 updates on commit and will not crash during commit processing).
+
+**本实验不必写基于日志的恢复策略：**
+
+1. **事务完成前，不会被清出缓冲，完成后一定要刷盘。从而保证了内存和磁盘页面的一致性**
+2. **事务之间不会有冲突，从而保证了事务一定会提交成功。**
+3. 
 
 ###  2.4. Granting Locks
 
@@ -94,30 +110,35 @@ for example), that allow a caller to request or release a (shared or
 exclusive) lock on a specific object on behalf of a specific
 transaction.
 
-We recommend locking at *page* granularity; please do not
+We recommend locking at *page* granularity; please do not **实现页锁**
 implement table-level locking (even though it is possible) for simplicity of testing. The rest
 of this document and our unit tests assume page-level locking.
 
 You will need to create data structures that keep track of which locks
 each transaction holds and check to see if a lock should be granted
-to a transaction when it is requested.
+to a transaction when it is requested. 
+
+**写个数据结构：可以知道一个事务持有哪些锁，并且知道一个锁属于哪些事务。还是有就是赋锁操作**
+
+1. **锁对应的事务id：如果有锁，设置为-1。锁对应的Pageid**
+2. **写一个Hash，全局变量，final。用来保存{事务id, 锁列表}**
 
 You will need to implement shared and exclusive locks; recall that these
-work as follows:
+work as follows: **读锁和写锁**，**或者说共享锁和排他锁**
 
-*  Before a transaction can read an object, it must have a shared lock on it.
-*  Before a transaction can write an object, it must have an exclusive lock on it.
-*  Multiple transactions can have a shared lock on an object.
-*  Only one transaction may have an exclusive lock on an object.
+*  Before a transaction can **read** an object, it must have a **shared** lock on it.
+*  Before a transaction can **write** an object, it must have an **exclusive** lock on it.
+*  **Multiple** transactions can have a **shared** lock on an object.
+*  Only **one** transaction may have an **exclusive** lock on an object.
 *  If transaction *t* is the only transaction holding a shared lock on
    an object *o*, *t* may *upgrade*
-   its lock on *o* to an exclusive lock.
+   its lock on *o* to an exclusive lock. **支持锁升级**
 
 If a transaction requests a lock that cannot be immediately granted, your code
 should *block*, waiting for that lock to become available (i.e., be
-released by another transaction running in a different thread).
+released by another transaction running in a different thread). (**支持等待机制**)
 Be careful about race conditions in your lock implementation --- think about
-how concurrent invocations to your lock may affect the behavior. 
+how concurrent invocations to your lock may affect the behavior.**注意并发** 
 (you way wish to read about <a href="http://docs.oracle.com/javase/tutorial/essential/concurrency/sync.html">
 Synchronization</a> in Java).
 
@@ -125,10 +146,10 @@ Synchronization</a> in Java).
 
 **Exercise 1.**
 
-Write the methods that acquire and release locks in BufferPool. Assuming
-you are using page-level locking, you will need to complete the following:
+Write the methods that **acquire and release locks in BufferPool**. Assuming
+you are using **page-level locking**, you will need to complete the following:
 
-*  Modify <tt>getPage()</tt> to block and acquire the desired lock
+*  Modify <tt>getPage()</tt> to **block and acquire** the desired lock
    before returning a page.
 *  Implement <tt>unsafeReleasePage()</tt>.  This method is primarily used
    for testing, and at the end of transactions.
@@ -147,10 +168,12 @@ the unit tests in LockingTest.
 
 ###  2.5. Lock Lifetime
 
-You will need to implement strict two-phase locking.  This means that
+You will need to implement strict **two-phase locking**.  This means that
 transactions should acquire the appropriate type of lock on any object
 before accessing that object and shouldn't release any locks until after
-the transaction commits.
+the transaction commits. 
+
+**两阶段锁：获取锁阶段可以获取任意类型的锁但不可以释放，释放锁阶段不能获取锁**
 
 Fortunately, the SimpleDB design is such that it is possible to obtain locks on
 pages in `BufferPool.getPage()` before you read or modify them.
@@ -159,6 +182,8 @@ we recommend acquiring locks in `getPage()`. Depending on your
 implementation, it is possible that you may not have to acquire a lock
 anywhere else. It is up to you to verify this!
 
+**simpledb就是这么设计的，获取页面之前可以进行加锁。你只需要在getPage()中加锁就可以实现上面的功能了。**
+
 You will need to acquire a *shared* lock on any page (or tuple)
 before you read it, and you will need to acquire an *exclusive*
 lock on any page (or tuple) before you write it. You will notice that
@@ -166,6 +191,8 @@ we are already passing around `Permissions` objects in the
 BufferPool; these objects indicate the type of lock that the caller
 would like to have on the object being accessed (we have given you the
 code for the `Permissions` class.)
+
+**读取页面的时候，你需要获得共享锁。写的时候需要排他锁。我们已经传递了一个代表读和写的参数Permissions给缓冲池了**
 
 Note that your implementation of `HeapFile.insertTuple()`
 and `HeapFile.deleteTuple()`, as well as the implementation
@@ -180,6 +207,11 @@ check that your implementation of
 any of the pages they access (you should have done this when you
 implemented this code in lab 2, but we did not test for this case.)
 
+**检查你以前实现插入删除读取的方法，看看他们是否是通过调用getPage方法实现的 ，以及是否正确传递了Permission参数。**
+
+- **heapFile中的插入删除**
+- **BufferPool中的插入删除脏标记**
+
 After you have acquired locks, you will need to think about when to
 release them as well. It is clear that you should release all locks
 associated with a transaction after it has committed or aborted to ensure strict 2PL.
@@ -187,6 +219,9 @@ However, it is
 possible for there to be other scenarios in which releasing a lock before
 a transaction ends might be useful. For instance, you may release a shared lock
 on a page after scanning it to find empty slots (as described below).
+
+**当你获取锁之后，你需要思考什么时候取释放锁。锁释放应该满足两阶段锁协议，在事务完成的时候释放。**
+**事务完成之前就释放锁的设想是可能的，并且可能很有意义。比如，在你检测到页面中的空槽时候释放共享锁**
 
 ***
 
@@ -198,13 +233,13 @@ not necessarily all) actions that you should verify work properly:
 *  Reading tuples off of pages during a SeqScan (if you
    implemented locking  in `BufferPool.getPage()`, this should work
    correctly as long as your `HeapFile.iterator()` uses
-   `BufferPool.getPage()`.)
+   `BufferPool.getPage()`.) **只要你的iterator是通过getPage获取的，那么就可以保证使用sescan获取页面的正确性**
 *  Inserting and deleting tuples through BufferPool and HeapFile
    methods (if you
    implemented locking in `BufferPool.getPage()`, this should work
    correctly as long as `HeapFile.insertTuple()` and
    `HeapFile.deleteTuple()` use
-   `BufferPool.getPage()`.)
+   `BufferPool.getPage()`.) **插入删除元组，如果使用了getpage，那么就正确**
 
 You will also want to think especially hard about acquiring and releasing
 locks in the following situations:
@@ -212,14 +247,14 @@ locks in the following situations:
 *  Adding a new page to a `HeapFile`.  When do you physically
    write the page to disk?  Are there race conditions with other transactions
    (on other threads) that might need special attention at the HeapFile level,
-   regardless of page-level locking?
+   regardless of page-level locking? **在heapFile中插入新页面,是否应该关注表级别，而不是页级别？**
 *  Looking for an empty slot into which you can insert tuples.
    Most implementations scan pages looking for an empty
    slot, and will need a READ_ONLY lock to do this.  Surprisingly, however,
    if a transaction *t* finds no free slot on a page *p*, *t* may immediately release the lock on *p*.
    Although this apparently contradicts the rules of two-phase locking, it is ok because
    *t* did not use any data from the page, such that a concurrent transaction *t'* which updated
-   *p* cannot possibly effect the answer or outcome of *t*.
+   *p* cannot possibly effect the answer or outcome of *t*.**如果希望寻找插入的槽位，碰到了空槽，可以直接释放锁。因为修改不会影响最终的结果**
 
 
 At this point, your code should pass the unit tests in
@@ -247,7 +282,7 @@ appropriately in your implementation.
 **Exercise 3.**
 
 Implement the necessary logic for page eviction without evicting dirty pages
-in the <tt>evictPage</tt> method in <tt>BufferPool</tt>.
+in the <tt>evictPage</tt> method in <tt>BufferPool</tt>.**实现页面淘汰策略NO STEAL/FORCE策略**
 
 ***
 
@@ -259,15 +294,26 @@ beginning of each query.  This object is passed to each of the operators
 involved in the query.  When the query is complete, the
 `BufferPool` method `transactionComplete` is called.
 
+**每次询问之前，事务ID对象就会被创造，当询问完成之后，事务完成方法就会被调用**
+
 Calling this method either *commits* or *aborts*  the
 transaction, specified by the parameter flag `commit`. At any point
 during its execution, an operator may throw a
+
 `TransactionAbortedException` exception, which indicates an
-internal error or deadlock has occurred.  The test cases we have provided
+internal error or deadlock has occurred.
+
+**调用这个方法的意义时表明事务要么终止了，要么中止了，根据commit来决定。中止的原因是事务执行发生了内置错误或者死锁。**
+
+ The test cases we have provided
 you with create the appropriate `TransactionId` objects, pass
 them to your operators in the appropriate way, and invoke
 `transactionComplete` when a query is finished.  We have also
 implemented `TransactionId`.
+
+**测试样例中，你可以创建合适的事务id对象，并以合适的方式调用。我们页已经实现了事务id对象**
+
+
 
 
 ***
@@ -280,10 +326,14 @@ transactionComplete, one which accepts an additional boolean **commit** argument
 and one which does not.  The version without the additional argument should
 always commit and so can simply be implemented by calling  `transactionComplete(tid, true)`.
 
+**实现事务完成方法，两个重载函数。一个调用另一个**
+
 When you commit, you should flush dirty pages
 associated to the transaction to disk. When you abort, you should revert
 any changes made by the transaction by restoring the page to its on-disk
 state.
+
+**提交刷盘，失败回滚**
 
 Whether the transaction commits or aborts, you should also release any state the
 `BufferPool` keeps regarding
@@ -292,6 +342,8 @@ the transaction, including releasing any locks that the transaction held.
 At this point, your code should pass the `TransactionTest` unit test and the
 `AbortEvictionTest` system test.  You may find the `TransactionTest` system test
 illustrative, but it will likely fail until you complete the next exercise.
+
+**成功或失败，都应该释放锁，更新事务状态。**
 
 ###  2.8. Deadlocks and Aborts
 
@@ -377,8 +429,8 @@ database server.
 During the course of this lab, we have identified some substantial design
 choices that you have to make:
 
-*  Locking granularity: page-level versus tuple-level
-*  Deadlock handling: detection vs. prevention, aborting yourself vs. others.
+*  Locking granularity: page-level versus tuple-level     **行级锁**
+*  Deadlock handling: detection vs. prevention, aborting yourself vs. others.   **死锁解决**
 
 ***
 
@@ -426,6 +478,7 @@ $ zip -r submission.zip src/ lab4-writeup.txt
 ```
 
 <a name="bugs"></a>
+
 ###  3.3. Submitting a bug
 
 SimpleDB is a relatively complex piece of code. It is very possible you are going to find bugs, inconsistencies, and bad, outdated, or incorrect documentation, etc.
@@ -455,8 +508,8 @@ You can also post on the class page on Piazza if you feel you have run into a bu
   autograder score until you fix them. If this is an issue for you, contact us to discuss options.
   
 * Given that this lab deals with concurrency, we will rerun the autograder after the due date to discourage
-trying buggy code until lucky. It is your responsibility to ensure that your code **reliably** passes
-the tests.
+  trying buggy code until lucky. It is your responsibility to ensure that your code **reliably** passes
+  the tests.
   
 * This lab has a higher percentage of manual grading at 50% compared to previous labs. Specifically, we will be
 very unhappy if your concurrency handling is bogus (e.g., inserting Thread.sleep(1000) until a race disappears).

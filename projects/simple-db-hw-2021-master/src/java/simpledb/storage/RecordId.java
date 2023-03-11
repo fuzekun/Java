@@ -10,6 +10,9 @@ public class RecordId implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+
+    private PageId pageId;
+    private int tupleno;
     /**
      * Creates a new RecordId referring to the specified PageId and tuple
      * number.
@@ -21,6 +24,8 @@ public class RecordId implements Serializable {
      */
     public RecordId(PageId pid, int tupleno) {
         // some code goes here
+        this.pageId = pid;
+        this.tupleno = tupleno;
     }
 
     /**
@@ -28,7 +33,7 @@ public class RecordId implements Serializable {
      */
     public int getTupleNumber() {
         // some code goes here
-        return 0;
+        return this.tupleno;
     }
 
     /**
@@ -36,19 +41,24 @@ public class RecordId implements Serializable {
      */
     public PageId getPageId() {
         // some code goes here
-        return null;
+        return this.pageId;
     }
 
     /**
      * Two RecordId objects are considered equal if they represent the same
      * tuple.
-     * 
+     * 如果两个recordId指向的tuple是相同的，就认为他们是相同的
+     *
+     * 只要页号和行号相同，那么两个tuple就是相同的
      * @return True if this and o represent the same tuple
+     *
      */
     @Override
     public boolean equals(Object o) {
         // some code goes here
-        throw new UnsupportedOperationException("implement this");
+        if (!(o instanceof RecordId)) return false;
+        RecordId other = (RecordId)o;
+        return this.tupleno == other.tupleno && this.pageId.equals(other.pageId);
     }
 
     /**
@@ -60,7 +70,9 @@ public class RecordId implements Serializable {
     @Override
     public int hashCode() {
         // some code goes here
-        throw new UnsupportedOperationException("implement this");
+        String hash = "" + this.pageId.getTableId() + " " + this.pageId.getPageNumber() + " " + tupleno;    // 表 + 页 + tuple号可以唯一确定一条记录
+//        throw new UnsupportedOperationException("implement this");
+        return hash.hashCode();
 
     }
 

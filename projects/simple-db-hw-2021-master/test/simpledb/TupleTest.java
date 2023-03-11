@@ -44,13 +44,12 @@ public class TupleTest extends SimpleDbTestBase {
      * Unit test for Tuple.getRecordId() and Tuple.setRecordId()
      */
     @Test public void modifyRecordId() {
-        Tuple tup1 = new Tuple(Utility.getTupleDesc(1));
-        HeapPageId pid1 = new HeapPageId(0,0);
-        RecordId rid1 = new RecordId(pid1, 0);
-        tup1.setRecordId(rid1);
-
+        Tuple tup1 = new Tuple(Utility.getTupleDesc(1));            // 首先创建一个Tuple
+        HeapPageId pid1 = new HeapPageId(0,0);          // 其次创建一个页
+        RecordId rid1 = new RecordId(pid1, 0);                 // 创建页的一条记录，把记录放入到0行。
+        tup1.setRecordId(rid1);                                         // 将记录引用放入到tuple中
 	try {
-	    assertEquals(rid1, tup1.getRecordId());
+	    assertEquals(rid1, tup1.getRecordId());                         // tuple的heap页发生了变化，判断是否成功修改。
 	} catch (java.lang.UnsupportedOperationException e) {
 		//rethrow the exception with an explanation
     	throw new UnsupportedOperationException("modifyRecordId() test failed due to " +
