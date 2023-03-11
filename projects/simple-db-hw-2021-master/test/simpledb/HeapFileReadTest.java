@@ -83,7 +83,8 @@ public class HeapFileReadTest extends SimpleDbTestBase {
 
     @Test
     public void testIteratorBasic() throws Exception {
-        HeapFile smallFile = SystemTestUtil.createRandomHeapFile(2, 3, null,
+        int rows = 505;
+        HeapFile smallFile = SystemTestUtil.createRandomHeapFile(2, rows, null,
                 null);
 
         DbFileIterator it = smallFile.iterator(tid);
@@ -101,7 +102,7 @@ public class HeapFileReadTest extends SimpleDbTestBase {
             assertNotNull(it.next());
             count += 1;
         }
-        assertEquals(3, count);
+        assertEquals(rows, count);
         it.close();
     }
 
@@ -109,7 +110,7 @@ public class HeapFileReadTest extends SimpleDbTestBase {
     public void testIteratorClose() throws Exception {
         // make more than 1 page. Previous closed iterator would start fetching
         // from page 1.
-        HeapFile twoPageFile = SystemTestUtil.createRandomHeapFile(2, 520,
+        HeapFile twoPageFile = SystemTestUtil.createRandomHeapFile(2, 512,
                 null, null);
 
         DbFileIterator it = twoPageFile.iterator(tid);

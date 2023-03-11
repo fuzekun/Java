@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="bookStore" />
+      <artifact name="bookStore" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f18c1ad9-897c-4b5d-aba4-912bd04eaaf6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../bookStore.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/commons-dbutils-1.7-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/commons-dbutils-1.7-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/commons-dbutils-1.7-test-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/commons-dbutils-1.7-tests.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/commons-dbutils-1.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/commons-dbutils-1.7-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/commons-dbutils-1.7-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/commons-dbutils-1.7-test-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/commons-dbutils-1.7-tests.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/commons-dbutils-1.7.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/bookStore_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/bookStore.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/activation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/activation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/c3p0_0_9_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/commons_beanutils_1_8_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_39.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_47.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_15__2_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/standard.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookStore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bookStore.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/commons-dbutils-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/META-INF/bookStore.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/dao/BookDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/dao/Imp/BookDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/dao/Imp/OrderDao$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/dao/Imp/OrderDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/dao/Imp/OrderItemsDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/dao/Imp/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/dao/OrderDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/dao/OrderItemsDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/dao/UserDao32.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/exception/MySqlException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/exception/ProductSoldedException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/exception/UserException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/filter/AutoLoginFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/filter/EncodingFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/model/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/model/OrderItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/model/PageBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/model/PageResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/model/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/service/OrderServiece.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/service/ProductService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/servlet/ActiveServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/servlet/AddCartServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/servlet/ChangeNumServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/servlet/CheckImgServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/servlet/ClearCartServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/servlet/FindByIdServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/servlet/FindOrderServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/servlet/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/servlet/LogoutServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/servlet/ModifyServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/servlet/MyAccountServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/servlet/OrderInfoServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/servlet/PayServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/servlet/ProductInfoServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/servlet/RegisterServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/servlet/SettleAccountServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/servlet/ShowProductByPageServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/servlet/SolveOrderServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/servlet/SubmitPayServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/utils/C3P0Utils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/utils/JdbcUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/utils/ManageThreadLocal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/classes/utils/SendJMail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/libs/activation.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/libs/c3p0-0.9.1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/libs/commons-beanutils-1.8.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/libs/commons-dbutils-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/libs/commons-fileupload-1.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/libs/commons-io-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/libs/commons-logging-1.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/libs/javax.mail-1.5.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/libs/jstl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/libs/mchange-commons-java-0.2.3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/libs/mysql-connector-java-8.0.15.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/libs/standard.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/new_words.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/activesuccess.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/ad/index_ad.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/ad/myad.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/ad/page_ad.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/css/Style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/css/dtree.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/css/left.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/000.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/2spcr2x158.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/aaa.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/about.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/ad_01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/ad_02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/ad_03.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/add.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/back1.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/bottom_01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/bt_02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/bt_03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/bt_icon_export.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/button_add.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/button_alert.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/button_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/button_cancel.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/button_clock.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/button_close01.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/button_del.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/button_exit.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/button_help.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/button_home.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/button_modi.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/button_ok.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/button_phone.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/button_phone01.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/button_print.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/button_save.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/button_search.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/button_search01.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/button_view.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/cart.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/dot.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/hot2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/hotel_dire_arrowc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/i_del.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/i_edit.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/i_ok.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/icon-calendar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/icon-delete.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/icon-pencil-x.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/icon-pencil.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/icon_time.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/icon_upfolder.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/icon_zoom.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/index_09.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/loginbg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/logintitle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/mis_002.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/mis_003.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/mis_01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/mis_03.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/mis_05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/mis_05a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/mis_05b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/mis_05c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/mis_12.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/mis_13.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/mis_15.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/modernliving.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/modernliving.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/open.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/optionbgOff.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/optionbgOn.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/prev.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/shim.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/tablehead.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/time.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/top.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/top_01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/top_03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/top_04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/top_100.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/top_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/tree/base.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/tree/cd.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/tree/empty.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/tree/folder.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/tree/folderopen.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/tree/globe.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/tree/imgfolder.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/tree/join.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/tree/joinbottom.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/tree/line.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/tree/minus.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/tree/minusbottom.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/tree/musicfolder.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/tree/nolines_minus.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/tree/nolines_plus.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/tree/page.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/tree/plus.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/tree/plusbottom.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/tree/question.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/tree/trash.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/images/zoom.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/jquery/calendar-green.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/jquery/calendar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/jquery/calendar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/jquery/jquery-1.4.2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/jquery/jquery.datepick-zh-CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/jquery/jquery.datepick.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/jquery/jquery.datepick.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/js/check.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/js/dtree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/js/public.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/login/bottom.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/login/home.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/login/left.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/login/top.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/login/welcome.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/orders/error.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/orders/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/orders/view.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/products/add.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/products/download.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/products/edit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/products/error.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/admin/products/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bank_img/abc.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bank_img/bc.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bank_img/bcc.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bank_img/beijingnongshang.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bank_img/bh.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bank_img/bj.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bank_img/ccb.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bank_img/cib.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bank_img/cmb.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bank_img/cmbc.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bank_img/dy.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bank_img/gf.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bank_img/guangda.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bank_img/hx.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bank_img/icbc.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bank_img/nanjing.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bank_img/ningbo.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bank_img/pingan.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bank_img/post.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bank_img/sfz.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bank_img/sh.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bank_img/shpd.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bank_img/zheshang.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bank_img/zx.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/101.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/102.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/103.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/104.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/105.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/106.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/107.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/TS1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/TS10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/TS11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/TS12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/TS13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/TS14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/TS2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/TS3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/TS4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/TS5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/TS6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/TS7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/TS8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/TS9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/bookcover.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/code.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/dayongxiaohua.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/dulala.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/euro.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/fish.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/java2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/ngcn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/oneplant.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/photog.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/subwayinshanghai.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/think.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/travelbook.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/bookcover/tripcn.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/cart.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/confirm.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/createOrderSuccess.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/delOrderSuccess.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/error/privilege.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/foot.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/head.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/IconTexto_WebDev_009.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/billboard.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/bottomlogo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/botton_gif_025.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/buy.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/buy.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/buy1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/buy2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/buy3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/buybutton.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/car_step8.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/cart.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/check_use.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/error.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/finalbutton.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/gif53_029.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/gwc_buy.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/gwc_jx.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/hottitle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/index.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/info.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/infobg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/loginbg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/loginbutton.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/loginline.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/logintitle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/logo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/menubg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/miniicon.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/miniicon2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/miniicon3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/orderbutton.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/productlist.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/productlist.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/serchbutton.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/signup.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/signupbutton.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/images/success.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/js/my.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/menu_search.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/modifyUserInfoSuccess.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/modifyuserinfo.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/myAccount.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/order.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/orderInfo.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/orderlist.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/pay.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/paysuccess.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/product_info.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/product_list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/register.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookStore_war_exploded/registersuccess.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/filter/EncodingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/filter/EncodingFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/C3P0Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/C3P0Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/JdbcUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/JdbcUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/META-INF/bookStore.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/META-INF/bookStore.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/dao/BookDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/dao/BookDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/dao/Imp/BookDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/dao/Imp/BookDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/dao/Imp/OrderDao$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/dao/Imp/OrderDao$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/dao/Imp/OrderDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/dao/Imp/OrderDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/dao/Imp/OrderItemsDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/dao/Imp/OrderItemsDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/dao/Imp/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/dao/Imp/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/dao/OrderDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/dao/OrderDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/dao/OrderItemsDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/dao/OrderItemsDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/dao/UserDao32.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/dao/UserDao32.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/exception/MySqlException.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/exception/MySqlException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/exception/ProductSoldedException.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/exception/ProductSoldedException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/exception/UserException.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/exception/UserException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/filter/AutoLoginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/filter/AutoLoginFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/filter/EncodingFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/filter/EncodingFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/model/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/model/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/model/OrderItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/model/OrderItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/model/PageBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/model/PageBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/model/PageResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/model/PageResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/model/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/service/OrderServiece.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/service/OrderServiece.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/service/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/ActiveServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/ActiveServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/AddCartServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/AddCartServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/ChangeNumServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/ChangeNumServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/CheckImgServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/CheckImgServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/ClearCartServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/ClearCartServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/FindByIdServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/FindByIdServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/FindOrderServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/FindOrderServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/LogoutServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/LogoutServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/ModifyServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/ModifyServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/MyAccountServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/MyAccountServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/OrderInfoServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/OrderInfoServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/PayServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/PayServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/ProductInfoServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/ProductInfoServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/RegisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/RegisterServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/SettleAccountServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/SettleAccountServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/ShowProductByPageServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/ShowProductByPageServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/SolveOrderServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/SolveOrderServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/SubmitPayServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/servlet/SubmitPayServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/utils/C3P0Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/utils/C3P0Utils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/utils/JdbcUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/utils/JdbcUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/utils/ManageThreadLocal.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/utils/ManageThreadLocal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/utils/SendJMail.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/utils/SendJMail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/libs/commons-beanutils-1.8.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/libs/commons-dbutils-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../create.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../insert.sql" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="bookstore" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="bookstore" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="bookstore" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="bookStore2: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="bookstore" type="feb32156:DbDataSourceImpl" />
+        <item name="collations" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="bookStore2@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="bookStore2@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="bookStore2@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="bookstore2: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="bookStore2@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="bookstore2: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="bookStore" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>org.apache.commons.dbutils.ResultSetHandler</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\projects\java\javaHub\projects\BookStore\bookStore\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="2MbAhxpVUgS8pA4LkLRED0nE6Xl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../projects/simple-db-hw-2021-master" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="dao" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\java\javaHub\projects\BookStore\bookStore\libs" />
+      <recent name="D:\projects\java\javaHub\projects\BookStore\bookStore\web\WEB-INF\libs" />
+      <recent name="D:\各种文件\项目实战\bookStore\web\WEB-INF\libs" />
+      <recent name="D:\各种文件\项目实战\bookStore\src\utils" />
+      <recent name="D:\各种文件\项目实战\bookStore\libs" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.39">
+    <configuration name="AddCartServlet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="servlet.AddCartServlet" />
+      <module name="bookStore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="servlet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dao.Imp.BookDao" />
+      <module name="bookStore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.Imp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dao.Imp.OrderDao" />
+      <module name="bookStore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.Imp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="service.ProductService" />
+      <module name="bookStore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.test" />
+      <module name="bookStore" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 8.5.39" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.39" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/bookStore" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="bookStore">
+          <settings>
+            <option name="CONTEXT_PATH" value="/bookStore" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_bookStore_3" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="37781" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="bookStore" />
+          <artifact name="bookStore" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.test" />
+      <item itemvalue="Application.BookDao" />
+      <item itemvalue="Application.AddCartServlet" />
+      <item itemvalue="Application.ProductService" />
+      <item itemvalue="Application.OrderDao" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.39" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.OrderDao" />
+        <item itemvalue="Application.ProductService" />
+        <item itemvalue="Application.AddCartServlet" />
+        <item itemvalue="Application.BookDao" />
+        <item itemvalue="Application.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:bookStore2@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:bookStore2@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@7d8cd8a2" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f18c1ad9-897c-4b5d-aba4-912bd04eaaf6" name="Default Changelist" comment="" />
+      <created>1562394487852</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562394487852</updated>
+      <workItem from="1562394491045" duration="231000" />
+      <workItem from="1562394815696" duration="18822000" />
+      <workItem from="1562548498966" duration="2990000" />
+      <workItem from="1562636789520" duration="9379000" />
+      <workItem from="1562656512651" duration="13448000" />
+      <workItem from="1562726106793" duration="9795000" />
+      <workItem from="1562752955498" duration="1801000" />
+      <workItem from="1562806524742" duration="27747000" />
+      <workItem from="1562913579273" duration="14011000" />
+      <workItem from="1562988407972" duration="16758000" />
+      <workItem from="1563009572189" duration="2210000" />
+      <workItem from="1662723181287" duration="8200000" />
+      <workItem from="1662778192907" duration="660000" />
+      <workItem from="1662877963852" duration="1189000" />
+      <workItem from="1662940949525" duration="204000" />
+      <workItem from="1678026032849" duration="3162000" />
+      <workItem from="1678079100944" duration="621000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/BookStore" />
+    </ignored-roots>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2240" y="-43" key="#Illuminated_Cloud" timestamp="1678079112573">
+      <screen x="2240" y="-43" width="2560" height="1392" />
+    </state>
+    <state x="2240" y="-43" key="#Illuminated_Cloud/0.0.1493.885/2240.-43.2560.1392@2240.-43.2560.1392" timestamp="1678079112573" />
+    <state x="3112" y="315" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1678028429347">
+      <screen x="2240" y="-43" width="2560" height="1392" />
+    </state>
+    <state x="3112" y="315" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1493.885/2240.-43.2560.1392@2240.-43.2560.1392" timestamp="1678028429347" />
+    <state x="3300" y="411" key="FileChooserDialogImpl" timestamp="1678079718896">
+      <screen x="2240" y="-43" width="2560" height="1392" />
+    </state>
+    <state x="3300" y="411" key="FileChooserDialogImpl/0.0.1493.885/2240.-43.2560.1392@2240.-43.2560.1392" timestamp="1678079718896" />
+    <state width="1740" height="446" key="GridCell.Tab.0.bottom" timestamp="1678079118213">
+      <screen x="2240" y="-43" width="2560" height="1392" />
+    </state>
+    <state width="1740" height="446" key="GridCell.Tab.0.bottom/0.0.1493.885/2240.-43.2560.1392@2240.-43.2560.1392" timestamp="1678079118213" />
+    <state width="1740" height="446" key="GridCell.Tab.0.center" timestamp="1678079118213">
+      <screen x="2240" y="-43" width="2560" height="1392" />
+    </state>
+    <state width="1740" height="446" key="GridCell.Tab.0.center/0.0.1493.885/2240.-43.2560.1392@2240.-43.2560.1392" timestamp="1678079118213" />
+    <state width="1740" height="446" key="GridCell.Tab.0.left" timestamp="1678079118212">
+      <screen x="2240" y="-43" width="2560" height="1392" />
+    </state>
+    <state width="1740" height="446" key="GridCell.Tab.0.left/0.0.1493.885/2240.-43.2560.1392@2240.-43.2560.1392" timestamp="1678079118212" />
+    <state width="1740" height="446" key="GridCell.Tab.0.right" timestamp="1678079118213">
+      <screen x="2240" y="-43" width="2560" height="1392" />
+    </state>
+    <state width="1740" height="446" key="GridCell.Tab.0.right/0.0.1493.885/2240.-43.2560.1392@2240.-43.2560.1392" timestamp="1678079118213" />
+    <state width="1740" height="446" key="GridCell.Tab.1.bottom" timestamp="1678029222062">
+      <screen x="2240" y="-43" width="2560" height="1392" />
+    </state>
+    <state width="1740" height="446" key="GridCell.Tab.1.bottom/0.0.1493.885/2240.-43.2560.1392@2240.-43.2560.1392" timestamp="1678029222062" />
+    <state width="1740" height="446" key="GridCell.Tab.1.center" timestamp="1678029222062">
+      <screen x="2240" y="-43" width="2560" height="1392" />
+    </state>
+    <state width="1740" height="446" key="GridCell.Tab.1.center/0.0.1493.885/2240.-43.2560.1392@2240.-43.2560.1392" timestamp="1678029222062" />
+    <state width="1740" height="446" key="GridCell.Tab.1.left" timestamp="1678029222062">
+      <screen x="2240" y="-43" width="2560" height="1392" />
+    </state>
+    <state width="1740" height="446" key="GridCell.Tab.1.left/0.0.1493.885/2240.-43.2560.1392@2240.-43.2560.1392" timestamp="1678029222062" />
+    <state width="1740" height="446" key="GridCell.Tab.1.right" timestamp="1678029222062">
+      <screen x="2240" y="-43" width="2560" height="1392" />
+    </state>
+    <state width="1740" height="446" key="GridCell.Tab.1.right/0.0.1493.885/2240.-43.2560.1392@2240.-43.2560.1392" timestamp="1678029222062" />
+    <state width="1740" height="446" key="GridCell.Tab.2.bottom" timestamp="1678029222062">
+      <screen x="2240" y="-43" width="2560" height="1392" />
+    </state>
+    <state width="1740" height="446" key="GridCell.Tab.2.bottom/0.0.1493.885/2240.-43.2560.1392@2240.-43.2560.1392" timestamp="1678029222062" />
+    <state width="1740" height="446" key="GridCell.Tab.2.center" timestamp="1678029222062">
+      <screen x="2240" y="-43" width="2560" height="1392" />
+    </state>
+    <state width="1740" height="446" key="GridCell.Tab.2.center/0.0.1493.885/2240.-43.2560.1392@2240.-43.2560.1392" timestamp="1678029222062" />
+    <state width="1740" height="446" key="GridCell.Tab.2.left" timestamp="1678029222062">
+      <screen x="2240" y="-43" width="2560" height="1392" />
+    </state>
+    <state width="1740" height="446" key="GridCell.Tab.2.left/0.0.1493.885/2240.-43.2560.1392@2240.-43.2560.1392" timestamp="1678029222062" />
+    <state width="1740" height="446" key="GridCell.Tab.2.right" timestamp="1678029222062">
+      <screen x="2240" y="-43" width="2560" height="1392" />
+    </state>
+    <state width="1740" height="446" key="GridCell.Tab.2.right/0.0.1493.885/2240.-43.2560.1392@2240.-43.2560.1392" timestamp="1678029222062" />
+    <state x="3000" y="231" key="SettingsEditor" timestamp="1678028831691">
+      <screen x="2240" y="-43" width="2560" height="1392" />
+    </state>
+    <state x="3000" y="231" key="SettingsEditor/0.0.1493.885/2240.-43.2560.1392@2240.-43.2560.1392" timestamp="1678028831691" />
+    <state x="3176" y="307" key="run.anything.popup" timestamp="1678028613471">
+      <screen x="2240" y="-43" width="2560" height="1392" />
+    </state>
+    <state x="3176" y="307" key="run.anything.popup/0.0.1493.885/2240.-43.2560.1392@2240.-43.2560.1392" timestamp="1678028613471" />
+  </component>
+</project>

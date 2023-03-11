@@ -130,7 +130,9 @@ public class JoinOptimizer {
             // HINT: You may need to use the variable "j" if you implemented
             // a join algorithm that's more complicated than a basic
             // nested-loops join.
-            return -1.0;
+            // 表1的IO， 扫描表1，每一条记录，IO + 扫描表2
+            return cost1 + card1 * (cost2 + card2);
+//            return -1.0;
         }
     }
 
@@ -169,15 +171,33 @@ public class JoinOptimizer {
     /**
      * Estimate the join cardinality of two tables.
      * */
-    public static int estimateTableJoinCardinality(Predicate.Op joinOp,
-                                                   String table1Alias, String table2Alias, String field1PureName,
-                                                   String field2PureName, int card1, int card2, boolean t1pkey,
-                                                   boolean t2pkey, Map<String, TableStats> stats,
-                                                   Map<String, Integer> tableAliasToId) {
+    public static int estimateTableJoinCardinality(Predicate.Op joinOp, String table1Alias, String table2Alias, String field1PureName, String field2PureName, int card1, int card2, boolean t1pkey, boolean t2pkey, Map<String, TableStats> stats, Map<String, Integer> tableAliasToId) {
         int card = 1;
         // some code goes here
+        if(joinOp == Predicate.Op.EQUALS){
+            // 取非主键
+            if(t1pkey && !t2pkey){
+                card = card2;
+            }
+            else if(!t1pkey && t2pkey){
+                card = card1;
+            }
+            // 两个非主键，取最大
+            else if(!t1pkey && !t2pkey){
+                card = Math.max(card1, card2);
+            }
+            // 两个主键，取最小
+            else{
+                card = Math.min(card1, card2);
+            }
+        }
+        else{
+            // 如果不是等于的情况下，是 30%
+            card = (int)(0.3 * card1 * card2);
+        }
         return card <= 0 ? 1 : card;
     }
+
 
     /**
      * Helper method to enumerate all of the subsets of a given size of a
@@ -191,26 +211,59 @@ public class JoinOptimizer {
      */
     public <T> Set<Set<T>> enumerateSubsets(List<T> v, int size) {
         Set<Set<T>> els = new HashSet<>();
-        els.add(new HashSet<>());
-        // Iterator<Set> it;
-        // long start = System.currentTimeMillis();
-
-        for (int i = 0; i < size; i++) {
-            Set<Set<T>> newels = new HashSet<>();
-            for (Set<T> s : els) {
-                for (T t : v) {
-                    Set<T> news = new HashSet<>(s);
-                    if (news.add(t))
-                        newels.add(news);
-                }
+        int n = v.size();
+        for (int i = 0; i < 1<<n; i++) {
+            int cnt = 0, x = i;
+            while (x != 0) {
+                cnt += x & 1;
+                x >>= 1;
             }
-            els = newels;
+            if (cnt != size) continue;
+//            if (hammingWeight(i) != size) continue;
+            Set<T> tmp = new HashSet<>();
+            for (int j = 0; j < n; j++) {
+                if ((i >> j & 1) == 1) tmp.add(v.get(j));
+            }
+            els.add(tmp);
         }
 
+//        els.add(new HashSet<>());
+//         Iterator<Set> it;
+//         long start = System.currentTimeMillis();
+//
+//        for (int i = 0; i < size; i++) {
+//            Set<Set<T>> newels = new HashSet<>();
+//            for (Set<T> s : els) {
+//                for (T t : v) {
+//                    Set<T> news = new HashSet<>(s);
+//                    if (news.add(t))
+//                        newels.add(news);
+//                }
+//            }
+//            els = newels;
+//        }
+//        dfs(v, size, 0, els, new ArrayDeque<>());
+
         return els;
-
     }
-
+    private int hammingWeight(int n) {
+        n = (n & 0x55555555) + ((n >>> 1)  & 0x55555555);
+        n = (n & 0x33333333) + ((n >>> 2)  & 0x33333333);
+        n = (n & 0x0f0f0f0f) + ((n >>> 4)  & 0x0f0f0f0f);
+        n = (n & 0x00ff00ff) + ((n >>> 8)  & 0x00ff00ff);
+        n = (n & 0x0000ffff) + ((n >>> 16) & 0x0000ffff);
+        return n;
+    }
+    private <T> void dfs(List<T>list, int size, int begin, Set<Set<T>> res, Deque<T> path) {
+        if (path.size() == size) {
+            res.add(new HashSet<>(path));
+        }
+        for (int i = begin; i < list.size(); i++) {     // 每次有两种方案，选择或者不选择
+            path.addLast(list.get(i));
+            dfs(list, size, i + 1, res, path);
+            path.removeLast();                          // 回溯
+        }
+    }
     /**
      * Compute a logical, reasonably efficient join on the specified tables. See
      * PS4 for hints on how this should be implemented.
@@ -238,8 +291,38 @@ public class JoinOptimizer {
 
         // some code goes here
         //Replace the following
-        return joins;
+        CostCard bestCostCard = new CostCard();
+        PlanCache planCache = new PlanCache();
+        int size = joins.size();
+        for(int i = 1; i <= size; i++){
+            // 枚举当前子集的所有大小
+            Set<Set<LogicalJoinNode>> subSets = enumerateSubsets(joins, i);
+            for(Set<LogicalJoinNode> subSet : subSets){
+                // 最佳花费
+                double bestCostSoFar = Double.MAX_VALUE;
+                bestCostCard = new CostCard();
+                for (LogicalJoinNode removeJoinNode : subSet) {
+                    // 计算查询子代价
+                    CostCard costCard = computeCostAndCardOfSubplan(stats, filterSelectivities, removeJoinNode, subSet, bestCostSoFar, planCache);
+                    if (costCard != null) {
+                        bestCostSoFar = costCard.cost;
+                        bestCostCard = costCard;
+                    }
+                }
+                // 如果被修改，说明有最佳
+                if(bestCostSoFar != Double.MAX_VALUE){
+                    planCache.addPlan(subSet, bestCostCard.cost, bestCostCard.card, bestCostCard.plan);
+                }
+            }
+            // 是否打印图形化计划
+            if(explain){
+                printJoins(bestCostCard.plan, planCache, stats, filterSelectivities);
+            }
+        }
+
+        return bestCostCard.plan;
     }
+
 
     // ===================== Private Methods =================================
 

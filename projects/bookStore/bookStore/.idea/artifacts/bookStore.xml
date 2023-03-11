@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="bookStore">
+    <output-path>$PROJECT_DIR$/out/artifacts/bookStore</output-path>
+    <root id="archive" name="bookStore.war">
+      <element id="dir-copy" path="$PROJECT_DIR$/web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="bookStore" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="activation" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

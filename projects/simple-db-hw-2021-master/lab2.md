@@ -113,8 +113,8 @@ At this point you should be able to pass the tests in the ant
 You'll also be able to use the provided SQL parser to run SQL queries against your database!  See [Section 2.7](#parser)
 for a brief tutorial.
 
-Finally, you might notice that the iterators in this lab extend the
-`Operator` class instead of implementing the OpIterator interface. Because the implementation of <tt>next</tt>/<tt>
+Finally, you might notice that the **iterators in this lab extend the**
+**`Operator` class instead of implementing the OpIterator interface.** Because the implementation of <tt>next</tt>/<tt>
 hasNext</tt>
 is often repetitive, annoying, and error-prone, `Operator`
 implements this logic generically, and only requires that you implement a simpler <tt>readNext</tt>. Feel free to use
@@ -140,14 +140,14 @@ operators that will enable you to perform queries that are slightly more interes
 
 Implement the skeleton methods in:
 
-***  
+***
 
 * src/java/simpledb/execution/Predicate.java
 * src/java/simpledb/execution/JoinPredicate.java
 * src/java/simpledb/execution/Filter.java
 * src/java/simpledb/execution/Join.java
 
-***  
+***
 
 At this point, your code should pass the unit tests in PredicateTest, JoinPredicateTest, FilterTest, and JoinTest.
 Furthermore, you should be able to pass the system tests FilterTest and JoinTest.
@@ -174,13 +174,13 @@ do not need to worry about the situation where the number of groups exceeds avai
 
 Implement the skeleton methods in:
 
-***  
+***
 
 * src/java/simpledb/execution/IntegerAggregator.java
 * src/java/simpledb/execution/StringAggregator.java
 * src/java/simpledb/execution/Aggregate.java
 
-***  
+***
 
 At this point, your code should pass the unit tests IntegerAggregatorTest, StringAggregatorTest, and AggregateTest.
 Furthermore, you should be able to pass the AggregateTest system test.
@@ -203,7 +203,7 @@ the physical file on disk. You will need to ensure that the RecordID in the tupl
 
 Implement the remaining skeleton methods in:
 
-***  
+***
 
 * src/java/simpledb/storage/HeapPage.java
 * src/java/simpledb/storage/HeapFile.java<br>
@@ -225,12 +225,12 @@ implementation of transactions in the next lab will not work properly.
 
 Implement the following skeleton methods in <tt>src/simpledb/BufferPool.java</tt>:
 
-***  
+***
 
 * insertTuple()
 * deleteTuple()
 
-***  
+***
 
 
 These methods should call the appropriate methods in the HeapFile that belong to the table being modified (this extra
@@ -242,8 +242,7 @@ BufferPoolWriteTest.
 ### 2.4. Insertion and deletion
 
 Now that you have written all of the HeapFile machinery to add and remove tuples, you will implement the `Insert`
-and `Delete`
-operators.
+and `Delete`operators.
 
 For plans that implement `insert` and `delete` queries, the top-most operator is a special `Insert` or `Delete`
 operator that modifies the pages on disk. These operators return the number of affected tuples. This is implemented by
@@ -259,12 +258,12 @@ returning a single tuple with one integer field, containing the count.
 
 Implement the skeleton methods in:
 
-***  
+***
 
 * src/java/simpledb/execution/Insert.java
 * src/java/simpledb/execution/Delete.java
 
-***  
+***
 
 At this point, your code should pass the unit tests in InsertTest. We have not provided unit tests for `Delete`.
 Furthermore, you should be able to pass the InsertTest and DeleteTest system tests.
@@ -296,7 +295,7 @@ page it evicts.
 
 Fill in the `flushPage()` method and additional helper methods to implement page eviction in:
 
-***  
+***
 
 * src/java/simpledb/storage/BufferPool.java
 
@@ -309,6 +308,8 @@ If you did not implement `writePage()` in
 remove a page from the buffer pool *without* flushing it to disk. We will not test `discardPage()`
 in this lab, but it will be necessary for future labs.
 
+最后，你应该实现discardPage()来从缓冲池中移除页面，而不必刷盘。我们不会对这个方法测试，但是他对以后的实验会有作用。
+
 At this point, your code should pass the EvictionTest system test.
 
 Since we will not be checking for any particular eviction policy, this test works by creating a BufferPool with 16
@@ -317,6 +318,16 @@ than 16 pages, and seeing if the memory usage of the JVM increases by more than 
 eviction policy correctly, you will not evict enough pages, and will go over the size limitation, thus failing the test.
 
 You have now completed this lab. Good work!
+
+
+
+测试方式：
+
+创建了一个可以缓存16个页面的缓冲池，然后扫描了一个超过16个页面的表。如果你没有成功实现淘汰策略，那么这个表的大小就会超过5M，测试就会失败。
+
+
+
+
 
 <a name="query_walkthrough"></a>
 

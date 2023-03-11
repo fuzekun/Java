@@ -1,14 +1,14 @@
 package simpledb.execution;
 
 import simpledb.common.Database;
+import simpledb.storage.*;
+import simpledb.transaction.Transaction;
 import simpledb.transaction.TransactionAbortedException;
 import simpledb.transaction.TransactionId;
 import simpledb.common.Type;
 import simpledb.common.DbException;
-import simpledb.storage.DbFileIterator;
-import simpledb.storage.Tuple;
-import simpledb.storage.TupleDesc;
 
+import javax.xml.crypto.Data;
 import java.util.*;
 
 /**
@@ -19,6 +19,10 @@ import java.util.*;
 public class SeqScan implements OpIterator {
 
     private static final long serialVersionUID = 1L;
+    private final TransactionId tid;                //一个操作对应一个事务，一个事务可以操作多张表
+    private String tablAlias;
+    private int tableid;
+    private DbFileIterator iterator;
 
     /**
      * Creates a sequential scan over the specified table as a part of the
@@ -38,15 +42,20 @@ public class SeqScan implements OpIterator {
      */
     public SeqScan(TransactionId tid, int tableid, String tableAlias) {
         // some code goes here
+        this.tid = tid;
+        this.tablAlias = tableAlias;
+        this.tableid = tableid;
     }
 
     /**
      * @return
      *       return the table name of the table the operator scans. This should
      *       be the actual name of the table in the catalog of the database
+     *       获取表的方法：
+     *
      * */
     public String getTableName() {
-        return null;
+        return Database.getCatalog().getTableName(this.tableid);
     }
 
     /**
@@ -55,7 +64,7 @@ public class SeqScan implements OpIterator {
     public String getAlias()
     {
         // some code goes here
-        return null;
+        return this.tablAlias;
     }
 
     /**
@@ -72,6 +81,9 @@ public class SeqScan implements OpIterator {
      */
     public void reset(int tableid, String tableAlias) {
         // some code goes here
+        this.tableid = tableid;
+        this.tablAlias = tableAlias;
+
     }
 
     public SeqScan(TransactionId tid, int tableId) {
@@ -80,6 +92,10 @@ public class SeqScan implements OpIterator {
 
     public void open() throws DbException, TransactionAbortedException {
         // some code goes here
+        // 打开表，就是初始化迭代器。
+        DbFile dbFile = Database.getCatalog().getDatabaseFile(this.tableid);
+        this.iterator = dbFile.iterator(this.tid);
+        iterator.open();                                    // 别忘了打开迭代器
     }
 
     /**
@@ -91,29 +107,49 @@ public class SeqScan implements OpIterator {
      *
      * @return the TupleDesc with field names from the underlying HeapFile,
      *         prefixed with the tableAlias string from the constructor.
+     *         获取tupleDesc, 这里的tupleDesc需要使用表的别名作为前缀进行包装
+     *         tupleDesc从HeapFile中进行获取
+     *
      */
+    private String getItemName(String name) {
+        String prefix = tablAlias == null ? "null" : tablAlias;         // 如果没有别名
+        return  prefix + "." + name;
+    }
     public TupleDesc getTupleDesc() {
         // some code goes here
-        return null;
+        TupleDesc tupleDesc = Database.getCatalog().getTupleDesc(this.tableid);
+        Iterator<TupleDesc.TDItem>it = tupleDesc.iterator();
+        int n = tupleDesc.numFields();
+//        System.out.println(String.format("域的个数%d\n", n));
+        TupleDesc.TDItem[] items = new TupleDesc.TDItem[n];
+        for (int i = 0; i < n; i++) {
+            items[i] = new TupleDesc.TDItem(tupleDesc.getFieldType(i), this.getItemName(tupleDesc.getFieldName(i)));
+        }
+        return new TupleDesc(items);
     }
 
     public boolean hasNext() throws TransactionAbortedException, DbException {
         // some code goes here
-        return false;
+        if (iterator == null) return false;                             // 如果没有打开
+        return iterator.hasNext();
     }
 
     public Tuple next() throws NoSuchElementException,
             TransactionAbortedException, DbException {
         // some code goes here
-        return null;
+        if (iterator == null || !iterator.hasNext())
+            throw new NoSuchElementException("数据库中没有该元素!");
+        return iterator.next();
     }
 
     public void close() {
         // some code goes here
+        iterator.close();
     }
 
     public void rewind() throws DbException, NoSuchElementException,
             TransactionAbortedException {
         // some code goes here
+        iterator.rewind();
     }
 }

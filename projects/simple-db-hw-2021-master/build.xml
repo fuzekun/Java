@@ -173,6 +173,11 @@
     </target>
 
     <target name="compile" description="Compile code">
+        <javac srcdir="${src}/java" destdir="${build.src}" debug="on" deprecation="on" optimize="off" includes="**">
+            <!--给编译器指定编码，防止出现："警告： 编码 GBK 的不可映射字符"-->
+            <compilerarg line="-encoding UTF-8 "/>
+            <classpath refid="classpath.base" />
+        </javac>
         <Compile srcdir="${src}/java" destdir="${build.src}">
             <classpath refid="classpath.base"/>
         </Compile>
@@ -204,6 +209,8 @@
         </jar>
     </target>
 
+
+
     <target name="clean" description="Remove build and dist directories">
         <delete dir="${build}"/>
         <delete dir="${dist}"/>
@@ -213,6 +220,7 @@
 
     <target name="testcompile" depends="compile" description="Compile all unit and system tests">
         <Compile srcdir="${testd}" destdir="${build.test}">
+
             <classpath refid="classpath.test"/>
         </Compile>
     </target>

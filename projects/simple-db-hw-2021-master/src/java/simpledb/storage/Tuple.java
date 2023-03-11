@@ -9,14 +9,17 @@ import java.util.Iterator;
  * Tuple maintains information about the contents of a tuple. Tuples have a
  * specified schema specified by a TupleDesc object and contain Field objects
  * with the data for each field.
+ * tuple通过查找某一recordid可以得到页信息和行信息。
+ * 页中有包含了表的信息。
+ * 所以可以通过这个引用得到，对应所在heappage的具体页号，以及对应的行号
  */
 public class Tuple implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private TupleDesc tupleDesc;
-    private RecordId recordId;
-    private final  Field[] fields;
+    private TupleDesc tupleDesc;                                // 数据描述的指针
+    private RecordId recordId;                                  // 记录index, 包括(pageNo和tupleNo)，也就是页号和行号
+    private final  Field[] fields;                              // 域，也就是具体需要保存的属性
     /**
      * Create a new tuple with the specified schema (type).
      *
@@ -27,7 +30,7 @@ public class Tuple implements Serializable {
     public Tuple(TupleDesc td) {
         // some code goes here
         tupleDesc = td;
-        fields = new Field[td.numFields()];
+        fields = new Field[td.numFields()];                     // 创建一个长度为属性个数的Field数组用于保存数据
     }
 
     /**
@@ -88,7 +91,7 @@ public class Tuple implements Serializable {
      *
      * column1\tcolumn2\tcolumn3\t...\tcolumnN
      *
-     * where \t is any whitespace (except a newline)
+     * where \t is any whitespace (except a newline), 需要换行
      */
     public String toString() {
         // some code goes here
@@ -96,7 +99,7 @@ public class Tuple implements Serializable {
         for(int i = 0;i < tupleDesc.numFields() - 1; i++){
             sb.append(fields[i].toString()+" ");
         }
-        sb.append(fields[tupleDesc.numFields() - 1].toString()+"\n");
+        sb.append(fields[tupleDesc.numFields() - 1].toString());
         return sb.toString();
     }
 

@@ -104,6 +104,7 @@ public class HeapPageReadTest extends SimpleDbTestBase {
 
     /**
      * Unit test for HeapPage.getNumEmptySlots()
+     *
      */
     @Test public void getNumEmptySlots() throws Exception {
         HeapPage page = new HeapPage(pid, EXAMPLE_DATA);

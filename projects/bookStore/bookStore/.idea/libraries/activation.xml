@@ -1,0 +1,26 @@
+<component name="libraryTable">
+  <library name="activation">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/activation.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/c3p0-0.9.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/commons-beanutils-1.8.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/commons-dbutils-1.7-tests.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/commons-fileupload-1.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/commons-dbutils-1.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/commons-io-2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/javax.mail-1.5.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/jstl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/mchange-commons-java-0.2.3.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/mysql-connector-java-8.0.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/standard.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/libs/commons-dbutils-1.7-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/libs/commons-dbutils-1.7-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/commons-dbutils-1.7-test-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

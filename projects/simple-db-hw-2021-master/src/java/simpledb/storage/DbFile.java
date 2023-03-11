@@ -15,18 +15,24 @@ import java.io.*;
  * file has a unique id used to store metadata about the table in the Catalog.
  * DbFiles are generally accessed through the buffer pool, rather than directly
  * by operators.
+ * 数据库存储在磁盘上的文件。一张表对应着一个DBFile
+ * DBFile可以获取页和tuple的迭代器。
+ * 每一个文件有位唯一的id，存储在catalog中
+ * DBFile通常首先从缓存池中获取，如果没有再从磁盘读取。
+ *
  */
 public interface DbFile {
     /**
      * Read the specified page from disk.
-     *
+     * 从磁盘中读取一页
      * @throws IllegalArgumentException if the page does not exist in this file.
      */
     Page readPage(PageId id);
 
     /**
      * Push the specified page to disk.
-     *
+     * p 是需要写的页，通过id中的pageno来决定需要插入的页的偏移量。
+     * IO错误，如果写失败的话
      * @param p The page to write.  page.getId().pageno() specifies the offset into the file where the page should be written.
      * @throws IOException if the write fails
      *

@@ -19,6 +19,7 @@ import simpledb.storage.*;
 import simpledb.systemtest.SystemTestUtil;
 import static org.junit.Assert.*;
 import junit.framework.JUnit4TestAdapter;
+import simpledb.transaction.TransactionAbortedException;
 import simpledb.transaction.TransactionId;
 
 public class BufferPoolWriteTest extends TestUtil.CreateHeapFile {
@@ -46,10 +47,17 @@ public class BufferPoolWriteTest extends TestUtil.CreateHeapFile {
                 byte[] emptyData = HeapPage.createEmptyPageData();
                 bw.write(emptyData);
                 bw.close();
-    			HeapPage p = new HeapPage(new HeapPageId(super.getId(), super.numPages() - 1),
-    					HeapPage.createEmptyPageData());
-    	        p.insertTuple(t);
-    			dirtypages.add(p);
+				try {
+					HeapPage p = (HeapPage) Database.getBufferPool().getPage(tid, new HeapPageId(super.getId(), super.numPages() - 1), Permissions.READ_WRITE);
+					p.insertTuple(t);
+					dirtypages.add(p);
+				} catch (TransactionAbortedException e) {
+					e.printStackTrace();
+				}
+				// 直接创建了一个新的Page,没有从bufferpool中获取，所以测试会报错
+//    			HeapPage p = new HeapPage(new HeapPageId(super.getId(), super.numPages() - 1),
+//    					HeapPage.createEmptyPageData());
+
     		}
     		return dirtypages;
     	}

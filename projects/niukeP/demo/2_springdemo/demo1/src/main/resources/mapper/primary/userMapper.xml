@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?> <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> <!--相当于UserMapper接口的实现 namespace必须是UserMapper类路径-->
+<mapper namespace="com.fuzekun.demo1.mapper.primary.UserMapper">
+<!-- findById必须和接口中的方法名一样 返回一个User-->
+<select id="findById" parameterType="int"
+        resultType="com.fuzekun.demo1.entity.User">
+        select * from user where id=#{id}
+    </select>
+</mapper>
