@@ -187,8 +187,7 @@ public class HeapFile implements DbFile {
                 return list;
             }
             //----------------- lab 4 ------------------------
-            // 当该 page 上没有空闲空 slot 的时候，提前释放该 page 上的锁，避免影响其他事务访问
-            // 这里进行提前释放锁。
+//             当该 page 上没有空闲空 slot 的时候，提前释放该 page 上的锁，节约释放锁的时间
             else{
                 Database.getBufferPool().unsafeReleasePage(tid, pageId);
             }

@@ -164,12 +164,7 @@ public class BufferPool {
                 }
 //                System.out.println(tid.getId() + "移除" + pid.getTableId() + " " + pid.getPageNumber());
                 // 可以看到，不只是pageMap的不在内存中。释放锁的时候，锁所在的页面都可能不在内存中。那说明这些页面被交换出去了
-                /**
-                 * 这个是因为，读锁并不会将页面变脏。
-                 * 所以说，读锁所在的页面可能会被换出内存。
-                 * 所以，每次事务完成，flush的时候，需要判断内存中是否有页面。如果没有，就不需要在进行flush操作了，因为已经换出去了。
-                 */
-//                if (pageStore.get(pid) == null) System.out.println("不在内存中");
+                if (pageStore.get(pid) == null) System.out.println("不在内存中");
                 // 将页面从事务表中去掉
                 pageMap.get(tid).remove(pid);
                 return true;
@@ -192,7 +187,6 @@ public class BufferPool {
          * 这里是锁管理中的事务完成，只负责进行锁的释放，不进行是否commit的判断
          * */
         public synchronized void completeTransaction(TransactionId tid) {
-            if (pageMap.get(tid) == null) return ;
             // 遍历事务持有锁的页，然后释放
             for (PageId pageId : pageMap.get(tid).keySet()) {
                 releaseLock(pageId, tid);
@@ -546,8 +540,8 @@ public class BufferPool {
         // 遍历所有事务持有的页面
         for (PageId pid : lockManager.getAllPages(tid).keySet()) {
             LinkedNode node = pageStore.get(pid);
-//            if (node == null) System.out.println(tid.getId() + "不存在" + pid.getTableId() + " " + pid.getPageNumber());
-            // 如果页面没有被换出内存，并且是脏页的情况下才需要
+            if (node == null) System.out.println(tid.getId() + "不存在" + pid.getTableId() + " " + pid.getPageNumber());
+            // 为了安全，进行一个判断，这个页面是不是当前事务正在处理,或者页面是不是在内存中
             if (node != null && tid.equals(node.page.isDirty())) {
                 flushPage(pid);
             }
@@ -579,7 +573,7 @@ public class BufferPool {
                 }catch (IOException e){
                     e.printStackTrace();
                 }
-//                if (lockManager.lockMap.get(evictPage.getId()) != null) System.out.println("正在交换带锁的页面, 没有脏标记，但是上锁了!");
+                if (lockManager.lockMap.get(evictPage.getId()) != null) System.out.println("正在交换带锁的页面");
                 pageStore.remove(node.pageId);
                 return ;
             }

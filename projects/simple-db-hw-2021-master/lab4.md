@@ -250,12 +250,11 @@ locks in the following situations:
    regardless of page-level locking? **在heapFile中插入新页面,是否应该关注表级别，而不是页级别？**
 *  Looking for an empty slot into which you can insert tuples.
    Most implementations scan pages looking for an empty
-   slot, and will need a READ_ONLY lock to do this.  Surprisingly, however,
-   if a transaction *t* finds no free slot on a page *p*, *t* may immediately release the lock on *p*.
+   slot, and will **need a READ_ONLY lock** to do this.  Surprisingly, however,
+   if a transaction *t* finds **no free slot on a page *p***, ***t* may immediately release the lock on *p***.
    Although this apparently contradicts the rules of two-phase locking, it is ok because
    *t* did not use any data from the page, such that a concurrent transaction *t'* which updated
-   *p* cannot possibly effect the answer or outcome of *t*.**如果希望寻找插入的槽位，碰到了空槽，可以直接释放锁。因为修改不会影响最终的结果**
-
+   *p* cannot possibly effect the answer or outcome of *t*.**如果希望寻找插入的槽位，但是发信啊没有空槽，可以直接释放锁。虽然违反了两段锁协议，但是由于并没有用到页面的任何数据，所以并发的事务t`就算更新了页面也不会影响结果**
 
 At this point, your code should pass the unit tests in
 LockingTest.
@@ -376,7 +375,7 @@ the WAIT-DIE and WOUND-WAIT schemes.
 
 **Exercise 5.**
 
-Implement deadlock detection or prevention in `src/simpledb/BufferPool.java`. You have many
+Implement **deadlock detection or prevention** in `src/simpledb/BufferPool.java`. You have many
 design decisions for your deadlock handling system, but it is not necessary to
 do something highly sophisticated. We expect you to do better than a simple timeout on each
 transaction. A good starting point will be to implement cycle-detection in a wait-for graph
@@ -394,12 +393,16 @@ You are not expected to automatically restart a transaction which
 fails due to a deadlock -- you can assume that higher level code
 will take care of this.
 
+**出错，抛出异常，捕捉之后调用事务完成方法**
+
 We have provided some (not-so-unit) tests in
 `test/simpledb/DeadlockTest.java`. They are actually a
 bit involved, so they may take more than a few seconds to run (depending
 on your policy). If they seem to hang indefinitely, then you probably
 have an unresolved deadlock. These tests construct simple deadlock
 situations that your code should be able to escape.
+
+**使用死锁测试,如果 出现了不断的错误可能有为解决的死锁**
 
 Note that there are two timing parameters near the top of
 `DeadLockTest.java`; these determine the frequency at which
@@ -409,6 +412,8 @@ performance characteristics by tweaking these parameters if you use a
 timeout-based detection method. The tests will output
 `TransactionAbortedExceptions` corresponding to resolved
 deadlocks to the console.
+
+**选哟通过**
 
 Your code should now should pass the `TransactionTest` system test (which
 may also run for quite a long time depending on your implementation).
@@ -420,6 +425,8 @@ transaction, the effects of any running transaction will not be visible
 after the system restarts (or the transaction aborts.) You may wish to
 verify this by running some transactions and explicitly killing the
 database server.
+
+**现在，你以及该有了一个客回复的数据库了。那意味着，如果数据库系统冲突，或者如果用户明确终止了一个事务，其他受影响是事务，在数据库重启之后，将会变得不可见。你或许想证明这一点，那么，你可以在运行一些事务的时候，终止服务器。**
 
 
 ***
