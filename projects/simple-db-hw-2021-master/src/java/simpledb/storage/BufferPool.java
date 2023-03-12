@@ -39,6 +39,7 @@ public class BufferPool {
     private final int numPage;
     private final ConcurrentHashMap<PageId, LinkedNode>pageStore;
     private final LockManage lockManage;
+
     // 双向链表
     private class LinkedNode {
 //        PageId pageId;
@@ -193,7 +194,7 @@ public class BufferPool {
 //            else if (pageLocks.get(tid) != null) {
                 PageLock pageLock = pageLocks.get(tid);
                 // 事务上是读锁
-                if (pageLock.getType() == PageLock.SHARE) {
+//                if (pageLock.getType() == PageLock.SHARE) {
                     // 新请求的是读锁
                     if (lockType == PageLock.SHARE) {
                         return true;
@@ -214,10 +215,10 @@ public class BufferPool {
                             return false;
                         }
                     }
-                }
+//                }
                 // 事务上是写锁
                 // 无论请求的是读锁还是写锁，都可以直接返回获取
-                return pageLock.getType() == PageLock.EXCLUSIVE;
+//                return pageLock.getType() == PageLock.EXCLUSIVE;
             }
             return false;
         }
@@ -277,15 +278,16 @@ public class BufferPool {
      */
     public BufferPool(int numPages) {
         // some code goes here
+        // lab2
         this.numPage = numPages;
         pageStore = new ConcurrentHashMap<>();
-        // 实验3创建双向链表实现LRU
+        // lab3
         head = new LinkedNode(null);
         tail = new LinkedNode(null);
         head.next = tail;
         tail.pre = head;
-        // 实验4创建新的锁
-        this.lockManage = new LockManage();
+        // lab4
+        lockManage = new LockManage();
     }
 
     public static int getPageSize() {
@@ -322,6 +324,8 @@ public class BufferPool {
     public  Page getPage(TransactionId tid, PageId pid, Permissions perm)
         throws TransactionAbortedException, DbException {
         // some code goes here
+
+        // some code goes here
         // some code goes here
         // ------------------- lab 4 -----------------------------
         // 判断需要获取的锁的类型
@@ -340,7 +344,7 @@ public class BufferPool {
                 throw new TransactionAbortedException();
             }
         }
-        //- ---------------  lab 3 ------------------------
+        // ----------------------     lab 3 ----------------------------
         if (!pageStore.containsKey(pid)) {   // 缓冲池中没有需要从DBFile中进行读取
             DbFile dbFile = Database.getCatalog().getDatabaseFile(pid.getTableId());    // 获取表
             Page page = dbFile.readPage(pid);                                           // 获取表的某一页
@@ -364,8 +368,6 @@ public class BufferPool {
      * Calling this is very risky, and may result in wrong behavior. Think hard
      * about who needs to call this and why, and why they can run the risk of
      * calling it.
-     * 直接释放锁，很危险。
-     * 因为事务一旦出现了错误。
      *
      * @param tid the ID of the transaction requesting the unlock
      * @param pid the ID of the page to unlock
@@ -373,7 +375,6 @@ public class BufferPool {
     public  void unsafeReleasePage(TransactionId tid, PageId pid) {
         // some code goes here
         // not necessary for lab1|lab2
-        // lab 4
         lockManage.releaseLock(pid, tid);
     }
 
