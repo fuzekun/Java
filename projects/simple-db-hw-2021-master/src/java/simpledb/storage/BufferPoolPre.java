@@ -10,6 +10,8 @@ import simpledb.transaction.TransactionId;
 import java.awt.image.DataBuffer;
 import java.io.*;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
@@ -739,5 +741,42 @@ public class BufferPoolPre {
 //            }
 //        }
 //        throw new DbException("全部都是脏页，内存已满!");
+//    }
+
+    /**
+     *
+     * 第一行数字设置成0，0，0，row[0]
+     * 第一列数字设置成0， 0， 0
+     * 然后第一行，第一列就处理完了
+     *
+     * 取当前行和列中最小的那一个
+     * 然后移动对应的行或者列
+     *
+     * */
+    public static int[][] restoreMatrix(int[] rowSum, int[] colSum) {
+        int n = rowSum.length, m = colSum.length;
+        int[][] martix = new int[n][m];
+        for (int i = 0; i < n; i++) Arrays.fill(martix[i], 0);
+        for (int i = 0, j = 0; i < n && j < m;) {
+            if (rowSum[i] < colSum[j]) {
+                martix[i][j] = rowSum[i];
+                colSum[j] -= rowSum[i];
+                i++;
+            } else {
+                martix[i][j] = colSum[j];
+                rowSum[i] -= colSum[j];
+                j++;
+            }
+        }
+        return martix;
+    }
+
+//    public static void main(String[] args) {
+//        int[] nums1 = new int[]{14,9};
+//        int[] nums2 = new int[]{6,9,8};
+//        int[][] ans = BufferPoolPre.restoreMatrix(nums1, nums2);
+//        for (int i = 0; i < ans.length; i++) {
+//            System.out.println(Arrays.toString(ans[i]));
+//        }
 //    }
 }

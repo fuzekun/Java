@@ -50,7 +50,7 @@ public class TupleTest extends SimpleDbTestBase {
         tup1.setRecordId(rid1);                                         // 将记录引用放入到tuple中
 	try {
 	    assertEquals(rid1, tup1.getRecordId());                         // tuple的heap页发生了变化，判断是否成功修改。
-	} catch (java.lang.UnsupportedOperationException e) {
+	} catch (UnsupportedOperationException e) {
 		//rethrow the exception with an explanation
     	throw new UnsupportedOperationException("modifyRecordId() test failed due to " +
     			"RecordId.equals() not being implemented.  This is not required for Lab 1, " +

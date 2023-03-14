@@ -45,6 +45,7 @@ public class Transaction {
     public void transactionComplete(boolean abort) throws IOException {
 
         if (started) {
+            // 失败，先提交在放锁
             //write abort log record and rollback transaction
             if (abort) {
                 Database.getLogFile().logAbort(tid); //does rollback too
@@ -52,7 +53,7 @@ public class Transaction {
 
             // Release locks and flush pages if needed
             Database.getBufferPool().transactionComplete(tid, !abort); // release locks
-
+            // 先放锁，在提交。
             // write commit log record
             if (!abort) {
             	Database.getLogFile().logCommit(tid);

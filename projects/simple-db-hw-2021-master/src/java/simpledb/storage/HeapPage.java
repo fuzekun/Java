@@ -122,10 +122,16 @@ public class HeapPage implements Page {
         return null;
     }
 
+    /**
+     *
+     * 保存脏页的快照，相当于redo日志。
+     * 定时将这个redo日志写入磁盘就行了。
+     * 每次重启的时候，将redo日志的内容进行重启
+     * */
     public void setBeforeImage() {
         synchronized(oldDataLock)
         {
-        oldData = getPageData().clone();
+            oldData = getPageData().clone();
         }
     }
 

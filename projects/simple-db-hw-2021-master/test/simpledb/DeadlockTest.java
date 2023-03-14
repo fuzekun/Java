@@ -67,7 +67,7 @@ public class DeadlockTest extends TestUtil.CreateHeapFile {
    * Helper method to clean up the syntax of starting a LockGrabber thread.
    * The parameters pass through to the LockGrabber constructor.
    */
-  public TestUtil.LockGrabber startGrabber(TransactionId tid, PageId pid,
+  public LockGrabber startGrabber(TransactionId tid, PageId pid,
       Permissions perm) {
 
     LockGrabber lg = new LockGrabber(tid, pid, perm);

@@ -11,7 +11,6 @@ import simpledb.execution.Delete;
 import simpledb.execution.Filter;
 import simpledb.execution.Predicate;
 import simpledb.execution.SeqScan;
-import simpledb.storage.BufferPool;
 import simpledb.storage.HeapFile;
 import simpledb.storage.IntField;
 import simpledb.storage.Tuple;

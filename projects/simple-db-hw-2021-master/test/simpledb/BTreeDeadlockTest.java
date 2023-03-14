@@ -86,7 +86,7 @@ public class BTreeDeadlockTest extends SimpleDbTestBase {
 	 * Helper method to clean up the syntax of starting a BTreeWriter thread.
 	 * The parameters pass through to the BTreeWriter constructor.
 	 */
-	public BTreeUtility.BTreeWriter startWriter(TransactionId tid, 
+	public BTreeWriter startWriter(TransactionId tid,
 			int item, int count) {
 
 		BTreeWriter bw = new BTreeWriter(tid, bf, item, count);
