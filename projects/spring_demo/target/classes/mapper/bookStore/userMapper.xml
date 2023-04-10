@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace:改mapper.xml映射文件的唯一标识并且必须和数据处理层的接口的路径相同-->
+<mapper namespace="com.springboot.dto.bookStore.UserMapper">
+    <!--   必须添加property属性 ，区别于是否加主键-->
+    <resultMap id="user" type="com.springboot.entity.bookStore.User">
+        <id column="id" property="id" javaType="int" ></id>
+        <result column="username" property="username" javaType="String" ></result>
+        <result column="PASSWORD" property="PASSWORD" javaType="String" ></result>
+        <result column="gender" property="gender" javaType="String" ></result>
+        <result column="email" property="email" javaType="String" ></result>
+        <result column="telephone" property="telephone" javaType="String" ></result>
+        <result column="introduce" property="introduce" javaType="String" ></result>
+        <result column="activeCode" property="activeCode" javaType="String" ></result>
+        <result column="state" property="state" javaType="int" ></result>
+        <result column="role" property="role" javaType="String" ></result>
+        <result column="registTime" property="registTime" javaType="Date" ></result>
+    </resultMap>
+    <!--id的值必须和数据处理层的接口名一致-->
+    <!--此处的User-->
+    <select id="findAllUser" resultMap="user">
+        select * from  user
+    </select>
+<!--    <select id="queryuserbyid"   parameterType="int" resultMap="user" resultType="User">-->
+<!--        select * from  user-->
+<!--        <trim suffixOverrides="and"  prefixOverrides="and">-->
+<!--            <where>-->
+<!--                <if test="userid!=null">-->
+<!--                    and userid = #{userid}-->
+<!--                </if>-->
+<!--            </where>-->
+<!--        </trim>-->
+<!--    </select>-->
+<!--    <select id="queryuserbyname" resultType="User" parameterType="string" resultMap="user">-->
+<!--        select * from  user-->
+<!--        <trim suffixOverrides="and"  prefixOverrides="and">-->
+<!--            <where>-->
+<!--                <if test="username!=null">-->
+<!--                    and username = #{username}-->
+<!--                </if>-->
+<!--            </where>-->
+<!--        </trim>-->
+<!--    </select>-->
+<!--    <update id="UpdUser" parameterType="User">-->
+<!--    </update>-->
+<!--    <delete id="DelUser"></delete>-->
+<!--    <insert id="AddUser" parameterType="User" >-->
+<!--        insert into  user value (${userid},#{username},${userage},#{userpwd})-->
+<!--    </insert>-->
+</mapper>
