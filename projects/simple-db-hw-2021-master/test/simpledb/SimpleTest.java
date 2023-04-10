@@ -11,7 +11,7 @@ import java.util.*;
  * @Description:
  */
 public class SimpleTest {
-    @Test
+//    @Test
     public void test() {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
