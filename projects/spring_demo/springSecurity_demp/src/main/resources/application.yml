@@ -1,0 +1,43 @@
+spring:
+  # 数据源
+  datasource:
+    bookstore:
+      jdbcurl: jdbc:mysql://localhost:3306/bookstore2?serverTimezone=UTC    # 这个是jdbcurl不是url。
+      username: root
+      password: 1230
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    test:
+      jdbcurl: jdbc:mysql://localhost:3306/test?serverTimezone=UTC
+      username: root
+      password: 1230
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  # 打包的名字
+  application:
+    name: springSecurityDemo
+  # tymeleaf 模板引擎
+  thymeleaf:
+    cache: false                        # 开发的时候不用，这样每次重新解析就不会有，代码改了页面不刷新的情况
+    prefix: classpath:/templates/
+    suffix: .html
+
+
+## 配置 MyBatis
+#mybatis:
+#  mapper-locations: classpath:mapper/*.xml
+#  type-aliases-package: com.example.entity
+#  configuration:
+#    map-underscore-to-camel-case: true
+##    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl               # 打印sql语句
+
+# web
+server:
+  port: 8080
+  servlet:
+    context-path: /springSecurityDemo
+
+
+logging:
+  level:
+    com.springboot.controller: debug
+#    com.springboot.dto: debug                                          # 打印SQL语句
+

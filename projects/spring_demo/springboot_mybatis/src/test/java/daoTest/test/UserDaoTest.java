@@ -1,6 +1,6 @@
 package daoTest.test;
 
-import com.springboot.SpringBootDemoApplication;
+import com.springboot.MyBatisDemoApplication;
 import com.springboot.dto.test.UserMapper;
 import com.springboot.entity.test.User;
 import org.junit.Test;
@@ -16,7 +16,7 @@ import java.util.List;
  * @date: 2023/4/10 16:54
  * @Description:
  */
-@SpringBootTest(classes = {SpringBootDemoApplication.class})
+@SpringBootTest(classes = {MyBatisDemoApplication.class})
 @RunWith(SpringRunner.class)        // 和spring的主类一起运行
 public class UserDaoTest {
 

@@ -1,5 +1,5 @@
-# 配置 MySQL
 spring:
+  # 数据源
   datasource:
     bookstore:
       jdbcurl: jdbc:mysql://localhost:3306/bookstore2?serverTimezone=UTC    # 这个是jdbcurl不是url。
@@ -11,14 +11,9 @@ spring:
       username: root
       password: 1230
       driver-class-name: com.mysql.cj.jdbc.Driver
-
+  # 打包的名字
   application:
-    name: springDemo
-  thymeleaf:
-    cache: false                        # 开发的时候不用，这样每次重新解析就不会有，代码改了页面不刷新的情况
-    prefix: classpath:/templates/
-    suffix: .html
-
+    name: mybatisDemo
 
 ## 配置 MyBatis
 #mybatis:
@@ -27,12 +22,6 @@ spring:
 #  configuration:
 #    map-underscore-to-camel-case: true
 ##    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl               # 打印sql语句
-
-# web
-server:
-  port: 8080
-  servlet:
-    context-path: /springDemo
 
 
 logging:

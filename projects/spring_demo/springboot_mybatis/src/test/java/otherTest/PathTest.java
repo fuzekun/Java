@@ -1,14 +1,9 @@
 package otherTest;
 
-import com.springboot.SpringBootDemoApplication;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
-import org.springframework.test.context.junit4.SpringRunner;
 
-import javax.annotation.Resources;
 import java.io.*;
 
 /**
